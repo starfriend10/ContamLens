@@ -1,19 +1,24 @@
 <p align="center">
 
-# Contaminants & Stressors Explorer
+# 🌍 Contaminants & Stressors Explorer
 
 ### Interactive exploration of six decades of environmental contaminants and stressors (1967–2026)
 
-<p>
-Explore <b>34,000+</b> environmental publications through interactive visualizations,
-expert-informed topic classification, and AI-assisted analyses.
-</p>
+Discover how environmental contaminants and stressors have evolved over nearly **60 years** through **interactive visualizations**, **expert-informed topic classification**, and **AI-assisted analyses**.
 
 <p>
 
-<a href="https://YOUR_GITHUB_PAGES_URL"><strong>🌐 Live Platform</strong></a> •
-<a href="YOUR_DOI"><strong>📄 Paper</strong></a> •
-<a href="#citation"><strong>📖 Citation</strong></a>
+<a href="https://YOUR_GITHUB_PAGES_URL">
+<img src="https://img.shields.io/badge/🌐_Live_Platform-Visit-success?style=for-the-badge">
+</a>
+
+<a href="YOUR_DOI">
+<img src="https://img.shields.io/badge/📄_Paper-Coming_Soon-blue?style=for-the-badge">
+</a>
+
+<a href="#citation">
+<img src="https://img.shields.io/badge/📖_Citation-BibTeX-orange?style=for-the-badge">
+</a>
 
 </p>
 
@@ -21,64 +26,66 @@ expert-informed topic classification, and AI-assisted analyses.
 
 ---
 
-## Platform Overview
-
-> An interactive knowledge platform that reveals how environmental contaminants and stressors have evolved over nearly **60 years**, integrating domain-informed text mining, expert knowledge, and interactive visual analytics.
+# 📸 Platform Preview
 
 <p align="center">
 
-**📅 1967–2026** &nbsp;&nbsp;&nbsp;
-**📚 34,000+ Publications** &nbsp;&nbsp;&nbsp;
-**🏷️ 566 Topics** &nbsp;&nbsp;&nbsp;
-**🌍 18 Domains** &nbsp;&nbsp;&nbsp;
-**📊 4 Integrated Panels**
+<img src="docs/images/homepage.png" width="90%">
 
 </p>
 
 ---
 
-# Preview
+# 🚀 At a Glance
 
-<p align="center">
-
-*(Homepage screenshot)*
-
-</p>
+| Study Period | Publications | Topics | Domains | Panels |
+|:------------:|:------------:|:------:|:-------:|:------:|
+| **1967–2026** | **34,000+** | **566** | **18** | **4** |
 
 ---
 
-# Explore
+# 🔍 Explore the Platform
 
-| | |
-|---|---|
-| 📈 **Trending** | Discover emerging, legacy, and rapidly changing contaminants and stressors. |
-| 🌊 **Patterns** | Explore continuous, V-shaped, wave-shaped, and other long-term temporal patterns. |
+| Page | Description |
+|------|-------------|
+| 📈 **Trending** | Identify emerging, declining, and legacy contaminants and stressors through temporal comparisons. |
+| 🌊 **Patterns** | Discover continuous, V-shaped, wave-shaped, and other long-term temporal patterns. |
 | 🌍 **Domains** | Browse 18 environmental contaminant and stressor domains. |
-| 🧩 **Panels** | Compare related environmental domains through integrated thematic panels. |
-| 📚 **Documentation** | Learn the methodology behind temporal analyses, topic classification, and frequency metrics. |
+| 🧩 **Panels** | Compare related domains through integrated thematic panels. |
+| 📚 **Documentation** | Learn the methodology behind trend analyses, topic classification, and frequency metrics. |
 
 ---
 
-# Platform Highlights
+# ✨ Highlights
 
-✅ Interactive Plotly visualizations
-
-✅ AI-assisted topic discovery
-
-✅ Expert-guided environmental classification
-
-✅ Five temporal comparison analyses
-
-✅ Domain-level rolling-window analyses
-
-✅ Responsive website
+- 📚 Built from **34,000+** high-quality environmental publications
+- 🏷️ Covers **566** keyword-level contaminant and stressor topics
+- 🌍 Organized into **18** expert-curated environmental domains
+- 📊 Interactive Plotly visualizations throughout the platform
+- 📈 Five complementary temporal comparison analyses
+- 🔄 Five-year rolling-window domain evolution
+- 🤖 AI-assisted topic mining with expert-guided environmental interpretation
+- 💻 Fully responsive static website
 
 ---
 
-# Repository
+# 🖼️ Gallery
+
+| Homepage | Trending |
+|----------|----------|
+| <img src="docs/images/homepage.png" width="100%"> | <img src="docs/images/trending.png" width="100%"> |
+
+| Patterns | Domains |
+|----------|----------|
+| <img src="docs/images/patterns.png" width="100%"> | <img src="docs/images/domains.png" width="100%"> |
+
+---
+
+# 📂 Repository
 
 ```text
 .
+├── index.html
 ├── css/
 ├── js/
 ├── pages/
@@ -87,17 +94,15 @@ expert-informed topic classification, and AI-assisted analyses.
 │   └── domains/
 ├── data/
 │   └── html/
-└── index.html
+└── README.md
 ```
 
 ---
 
-# Running Locally
-
-Clone the repository
+# 🌐 Run Locally
 
 ```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
 ```
 
 Open
@@ -106,34 +111,38 @@ Open
 index.html
 ```
 
-in your browser.
+in your web browser.
 
 No installation or server is required.
 
 ---
 
-# Associated Publication
+# 📖 Associated Publication
 
 **Title**
 
-To be updated after publication.
+*(To be updated after publication.)*
 
 ---
 
-# Citation
+# 📑 Citation
 
 Citation information will be added after publication.
 
+```bibtex
+Coming soon...
+```
+
 ---
 
-# License
+# 📄 License
 
-MIT License
+This project is released under the **MIT License**.
 
 ---
 
 <p align="center">
 
-Developed for exploring the long-term evolution of environmental contaminants and stressors.
+Developed for exploring the long-term evolution of environmental contaminants and stressors through domain-informed text mining, expert knowledge, and interactive visualization.
 
 </p>
