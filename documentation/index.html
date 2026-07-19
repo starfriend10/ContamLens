@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Documentation for the Contaminants & Stressors Explorer, including methodology, platform guidance, authors, and project resources."
+    >
+
+    <title>Documentation | Contaminants &amp; Stressors Explorer</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/analysis.css">
+    <link rel="stylesheet" href="../css/documentation.css">
+</head>
+
+<body class="analysis-page documentation-page">
+
+    <!-- =====================================================
+         Site header
+    ====================================================== -->
+    <header class="analysis-header">
+        <div class="header-inner">
+
+            <a class="site-brand" href="../">
+                <span class="site-brand-title">
+                    Contaminants &amp; Stressors
+                </span>
+
+                <span class="site-brand-subtitle">
+                    Explorer
+                </span>
+            </a>
+
+            <nav class="primary-navigation" aria-label="Primary navigation">
+
+                <a class="nav-link" href="../">
+                    Home
+                </a>
+
+                <a class="nav-link" href="../trending/">
+                    Trending
+                </a>
+
+                <a class="nav-link" href="../patterns/">
+                    Patterns
+                </a>
+
+                <a class="nav-link" href="../domains/">
+                    Domains
+                </a>
+
+                <a class="nav-link" href="../panels/">
+                    Panels
+                </a>
+
+                <a class="nav-link active" href="../documentation/">
+                    Documentation
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =====================================================
+         Main content
+    ====================================================== -->
+    <main class="analysis-main">
+
+        <!-- Compact introduction -->
+        <section class="analysis-intro documentation-intro">
+            <div class="analysis-inner analysis-intro-grid">
+
+                <div>
+                    <h1>
+                        Documentation
+                    </h1>
+                </div>
+
+                <div>
+                    <p class="section-label">
+                        Methods, guidance, and resources
+                    </p>
+
+                    <p class="analysis-description">
+                        Learn how the platform was developed, how to interpret
+                        and control its interactive visualizations, and where to
+                        find project information and associated resources.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             Documentation navigation
+        ================================================== -->
+        <nav
+            class="context-navigation documentation-navigation"
+            aria-label="Documentation sections"
+        >
+            <div class="analysis-inner context-navigation-inner">
+
+                <a
+                    class="context-link active"
+                    href="#methodology"
+                >
+                    Methodology
+                </a>
+
+                <a
+                    class="context-link"
+                    href="#platform-guide"
+                >
+                    Platform Guide
+                </a>
+
+                <a
+                    class="context-link"
+                    href="#authors-resources"
+                >
+                    Authors &amp; Resources
+                </a>
+
+            </div>
+        </nav>
+
+
+        <!-- =================================================
+             Methodology
+        ================================================== -->
+        <section
+            id="methodology"
+            class="documentation-section documentation-methodology"
+        >
+            <div class="analysis-inner documentation-inner">
+
+                <header class="documentation-section-heading">
+                    <div>
+                        <p class="section-label">
+                            Workflow
+                        </p>
+
+                        <h2>
+                            Methodology
+                        </h2>
+                    </div>
+
+                    <p class="documentation-section-description">
+                        Turn publication data into the topics, trends, domains, and
+                        interactive visualizations.
+                    </p>
+                </header>
+
+
+                <!-- Method workflow -->
+                <div class="documentation-method-grid">
+
+                    <article class="documentation-method-card">
+                        <p class="documentation-step-number">
+                            01
+                        </p>
+
+                        <h3>
+                            Publication retrieval
+                        </h3>
+
+                        <p class="documentation-card-summary">
+                            Collect relevant publication metadata from
+                            <em>Environmental Science &amp; Technology</em>.
+                        </p>
+
+                        <button
+                            class="documentation-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            Show details
+                        </button>
+
+                        <div class="documentation-details" hidden>
+                            <p>
+                                Publication records from 1967–2026 were
+                                retrieved from Web of Science. Research
+                                articles, reviews, perspectives, and relevant
+                                editorials were retained after duplicate and
+                                irrelevant records were removed.
+                            </p>
+
+                            <p>
+                                Publication year, title, keywords, abstract,
+                                document type, affiliations,
+                                corresponding-author address, DOI, and other
+                                bibliographic information were retained.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-method-card">
+                        <p class="documentation-step-number">
+                            02
+                        </p>
+
+                        <h3>
+                            Keyword cleaning
+                        </h3>
+
+                        <p class="documentation-card-summary">
+                            Standardize terminology before topic analysis.
+                        </p>
+
+                        <button
+                            class="documentation-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            Show details
+                        </button>
+
+                        <div class="documentation-details" hidden>
+                            <p>
+                                Scientific keywords frequently appear as
+                                spelling variants, abbreviations, formulas,
+                                synonyms, and singular or plural forms.
+                            </p>
+
+                            <p>
+                                A six-step workflow removed excess components,
+                                unified acronyms, standardized chemical names,
+                                combined principal terms, corrected special
+                                cases through expert review, and applied
+                                terminology stemming where appropriate.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-method-card">
+                        <p class="documentation-step-number">
+                            03
+                        </p>
+
+                        <h3>
+                            Contaminant identification
+                        </h3>
+
+                        <p class="documentation-card-summary">
+                            Identify contaminant- and stressor-related topics.
+                        </p>
+
+                        <button
+                            class="documentation-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            Show details
+                        </button>
+
+                        <div class="documentation-details" hidden>
+                            <p>
+                                Candidate terms were screened using automated
+                                chemical recognition, contextual rules, and
+                                expert review.
+                            </p>
+
+                            <p>
+                                Related expressions were consolidated into
+                                canonical terms so publications discussing the
+                                same contaminant or stressor could be analyzed
+                                together.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-method-card">
+                        <p class="documentation-step-number">
+                            04
+                        </p>
+
+                        <h3>
+                            Trend analysis
+                        </h3>
+
+                        <p class="documentation-card-summary">
+                            Compare normalized topic frequencies across time.
+                        </p>
+
+                        <button
+                            class="documentation-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            Show details
+                        </button>
+
+                        <div class="documentation-details" hidden>
+                            <p>
+                                Topic popularity was normalized by publication
+                                volume so periods with different numbers of
+                                papers could be compared fairly.
+                            </p>
+
+                            <p>
+                                A modified trend factor compares normalized
+                                frequencies between past and current periods.
+                                Positive values indicate increasing attention,
+                                while negative values indicate declining
+                                attention.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-method-card">
+                        <p class="documentation-step-number">
+                            05
+                        </p>
+
+                        <h3>
+                            Associated metadata
+                        </h3>
+
+                        <p class="documentation-card-summary">
+                            Process temporal and geographical information.
+                        </p>
+
+                        <button
+                            class="documentation-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            Show details
+                        </button>
+
+                        <div class="documentation-details" hidden>
+                            <p>
+                                Publication years and author affiliations were
+                                processed to characterize temporal and
+                                geographical research evolution.
+                            </p>
+
+                            <p>
+                                Country and region information was extracted
+                                using rule-based parsing, named-entity
+                                recognition, and post-processing.
+                                Corresponding-author affiliations were
+                                prioritized when available.
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-method-card">
+                        <p class="documentation-step-number">
+                            06
+                        </p>
+
+                        <h3>
+                            Bottom-up classification
+                        </h3>
+
+                        <p class="documentation-card-summary">
+                            Organize topics into a multilevel hierarchy.
+                        </p>
+
+                        <button
+                            class="documentation-toggle"
+                            type="button"
+                            aria-expanded="false"
+                        >
+                            Show details
+                        </button>
+
+                        <div class="documentation-details" hidden>
+                            <p>
+                                The identified topics were organized through
+                                AI-assisted drafting and expert refinement.
+                            </p>
+
+                            <p>
+                                The final structure includes up to five
+                                hierarchy levels, 18 domains, and four thematic
+                                panels. Branch depth varies according to the
+                                conceptual structure of each topic.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Analysis definitions -->
+                <div class="documentation-analysis-layout">
+
+                    <!-- Trend-factor card -->
+                    <article class="documentation-analysis-card documentation-trend-card">
+                        <p class="documentation-card-label">
+                            Temporal comparison
+                        </p>
+
+                        <h3>
+                            Trend factor
+                        </h3>
+
+                        <p>
+                            Topic frequencies are normalized by the total number
+                            of publications in each period and reported per
+                            <i>k</i> publications. The trend factor compares the
+                            normalized frequencies of a later period,
+                            <i>P</i><sub>j</sub>, with an earlier period,
+                            <i>P</i><sub>i</sub>.
+                        </p>
+
+                        <div
+                            class="documentation-equation-box documentation-equation-stack"
+                            aria-label="Period frequency and trend-factor equations"
+                        >
+                            <!-- F_period -->
+                            <math display="block" class="documentation-math">
+                                <mrow>
+                                    <msub>
+                                        <mi>F</mi>
+                                        <mtext>period</mtext>
+                                    </msub>
+                                    <mo>=</mo>
+
+                                    <mfrac>
+                                        <mrow>
+                                            <munderover>
+                                                <mo>∑</mo>
+                                                <mrow>
+                                                    <mtext>start</mtext>
+                                                    <mo>=</mo>
+                                                    <mi>n</mi>
+                                                </mrow>
+                                                <mrow>
+                                                    <mtext>end</mtext>
+                                                    <mo>=</mo>
+                                                    <mi>m</mi>
+                                                </mrow>
+                                            </munderover>
+                                            <msub>
+                                                <mi>f</mi>
+                                                <mtext>period</mtext>
+                                            </msub>
+                                        </mrow>
+
+                                        <mrow>
+                                            <munderover>
+                                                <mo>∑</mo>
+                                                <mrow>
+                                                    <mtext>start</mtext>
+                                                    <mo>=</mo>
+                                                    <mi>n</mi>
+                                                </mrow>
+                                                <mrow>
+                                                    <mtext>end</mtext>
+                                                    <mo>=</mo>
+                                                    <mi>m</mi>
+                                                </mrow>
+                                            </munderover>
+                                            <msub>
+                                                <mi>N</mi>
+                                                <mtext>period</mtext>
+                                            </msub>
+                                        </mrow>
+                                    </mfrac>
+
+                                    <mspace width="0.45em"></mspace>
+                                    <mo>(</mo>
+                                    <mtext>if</mtext>
+                                    <mspace width="0.3em"></mspace>
+                                    <mi>n</mi>
+                                    <mo>≠</mo>
+                                    <mi>m</mi>
+                                    <mo>)</mo>
+
+                                    <mo>=</mo>
+
+                                    <mfrac>
+                                        <msub><mi>f</mi><mi>n</mi></msub>
+                                        <msub><mi>N</mi><mi>n</mi></msub>
+                                    </mfrac>
+
+                                    <mspace width="0.45em"></mspace>
+                                    <mo>(</mo>
+                                    <mtext>if</mtext>
+                                    <mspace width="0.3em"></mspace>
+                                    <mi>n</mi>
+                                    <mo>=</mo>
+                                    <mi>m</mi>
+                                    <mo>)</mo>
+                                </mrow>
+                            </math>
+
+                            <!-- F_Pi and F_Pj -->
+                            <math display="block" class="documentation-math">
+                                <mrow>
+                                    <msub>
+                                        <mi>F</mi>
+                                        <msub><mi>P</mi><mi>i</mi></msub>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mi>k</mi>
+                                    <mo>×</mo>
+
+                                    <mfrac>
+                                        <mrow>
+                                            <munderover>
+                                                <mo>∑</mo>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>n</mi><mo>,</mo><mi>i</mi></mrow>
+                                                </msub>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>m</mi><mo>,</mo><mi>i</mi></mrow>
+                                                </msub>
+                                            </munderover>
+                                            <msub>
+                                                <mi>f</mi>
+                                                <msub><mi>P</mi><mi>i</mi></msub>
+                                            </msub>
+                                        </mrow>
+
+                                        <mrow>
+                                            <munderover>
+                                                <mo>∑</mo>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>n</mi><mo>,</mo><mi>i</mi></mrow>
+                                                </msub>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>m</mi><mo>,</mo><mi>i</mi></mrow>
+                                                </msub>
+                                            </munderover>
+                                            <msub>
+                                                <mi>N</mi>
+                                                <msub><mi>P</mi><mi>i</mi></msub>
+                                            </msub>
+                                        </mrow>
+                                    </mfrac>
+
+                                    <mspace width="0.65em"></mspace>
+                                    <mtext>and</mtext>
+                                    <mspace width="0.65em"></mspace>
+
+                                    <msub>
+                                        <mi>F</mi>
+                                        <msub><mi>P</mi><mi>j</mi></msub>
+                                    </msub>
+                                    <mo>=</mo>
+                                    <mi>k</mi>
+                                    <mo>×</mo>
+
+                                    <mfrac>
+                                        <mrow>
+                                            <munderover>
+                                                <mo>∑</mo>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>n</mi><mo>,</mo><mi>j</mi></mrow>
+                                                </msub>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>m</mi><mo>,</mo><mi>j</mi></mrow>
+                                                </msub>
+                                            </munderover>
+                                            <msub>
+                                                <mi>f</mi>
+                                                <msub><mi>P</mi><mi>j</mi></msub>
+                                            </msub>
+                                        </mrow>
+
+                                        <mrow>
+                                            <munderover>
+                                                <mo>∑</mo>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>n</mi><mo>,</mo><mi>j</mi></mrow>
+                                                </msub>
+                                                <msub>
+                                                    <mi>P</mi>
+                                                    <mrow><mi>m</mi><mo>,</mo><mi>j</mi></mrow>
+                                                </msub>
+                                            </munderover>
+                                            <msub>
+                                                <mi>N</mi>
+                                                <msub><mi>P</mi><mi>j</mi></msub>
+                                            </msub>
+                                        </mrow>
+                                    </mfrac>
+
+                                    <mspace width="0.5em"></mspace>
+                                    <mo>(</mo>
+                                    <msub><mi>P</mi><mi>j</mi></msub>
+                                    <mo>&gt;</mo>
+                                    <msub><mi>P</mi><mi>i</mi></msub>
+                                    <mo>)</mo>
+                                </mrow>
+                            </math>
+
+                            <!-- Trend factor -->
+                            <math display="block" class="documentation-math">
+                                <mrow>
+                                    <mtext>Trend factor</mtext>
+                                    <mo>=</mo>
+                                    <mi>log</mi>
+                                    <mo>(</mo>
+                                    <mfrac>
+                                        <msub>
+                                            <mi>F</mi>
+                                            <msub><mi>P</mi><mi>j</mi></msub>
+                                        </msub>
+                                        <msub>
+                                            <mi>F</mi>
+                                            <msub><mi>P</mi><mi>i</mi></msub>
+                                        </msub>
+                                    </mfrac>
+                                    <mo>)</mo>
+                                </mrow>
+                            </math>
+                        </div>
+
+                        <div class="documentation-criteria-grid">
+                            <div class="documentation-criterion">
+                                <strong>Trending-up</strong>
+                                <span>TF &gt; 0.5</span>
+                                <span>F<sub>current</sub> &gt; 1</span>
+                            </div>
+
+                            <div class="documentation-criterion">
+                                <strong>Emerging</strong>
+                                <span>TF &gt; 1</span>
+                                <span>F<sub>current</sub> &gt; 2</span>
+                            </div>
+
+                            <div class="documentation-criterion">
+                                <strong>Trending-down</strong>
+                                <span>TF &lt; −0.5</span>
+                                <span>F<sub>past</sub> &gt; 1</span>
+                            </div>
+
+                            <div class="documentation-criterion">
+                                <strong>Legacy</strong>
+                                <span>TF &lt; −1</span>
+                                <span>F<sub>past</sub> &gt; 2</span>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <!-- Frequency definitions + analysis scales -->
+                    <div class="documentation-frequency-cluster">
+
+                        <!-- B: Keyword-level -->
+                        <article class="documentation-analysis-card documentation-scale-card documentation-keyword-card">
+                            <p class="documentation-card-label">
+                                Keyword-level
+                            </p>
+
+                            <h3>
+                                15-year consecutive periods
+                            </h3>
+
+                            <div class="documentation-period-grid" aria-label="Keyword-level historical periods">
+                                <div>
+                                    <strong>P1</strong>
+                                    <span>1967–1981</span>
+                                </div>
+
+                                <div>
+                                    <strong>P2</strong>
+                                    <span>1982–1996</span>
+                                </div>
+
+                                <div>
+                                    <strong>P3</strong>
+                                    <span>1997–2011</span>
+                                </div>
+
+                                <div>
+                                    <strong>P4</strong>
+                                    <span>2012–2026</span>
+                                </div>
+                            </div>
+
+                            <p class="documentation-compact-note">
+                                Fifteen-year periods reduce annual variability
+                                and emphasize long-term topic evolution.
+                            </p>
+
+                        </article>
+
+
+                        <!-- C: Domain-level -->
+                        <article class="documentation-analysis-card documentation-scale-card documentation-domain-card">
+                            <p class="documentation-card-label">
+                                Domain-level
+                            </p>
+
+                            <h3>
+                                5-year rolling windows
+                            </h3>
+
+                            <div class="documentation-window-flow" aria-label="Examples of five-year rolling windows">
+                                <span>1967–1971</span>
+                                <span aria-hidden="true">→</span>
+                                <span>1968–1972</span>
+                                <span aria-hidden="true">→</span>
+                                <span>1969–1973</span>
+                                <span aria-hidden="true">→</span>
+                                <span>1970–1974</span>
+                                <span aria-hidden="true">→</span>
+                                <span>…</span>
+                            </div>
+
+                            <p class="documentation-compact-note">
+                                Five-year windows use the starting year as the timestamp,
+                                reducing keyword noise and clarifying domain-level evolution.
+                            </p>
+                        </article>
+
+
+                        <!-- D: Frequency definitions -->
+                        <article class="documentation-analysis-card documentation-frequency-card">
+                            <p class="documentation-card-label">
+                                Frequency definitions
+                            </p>
+
+                            <h3>
+                                Aggregated and unique frequencies
+                            </h3>
+
+                            <div class="documentation-frequency-definition-grid">
+                                <div>
+                                    <strong>Aggregated frequency</strong>
+                                    <span>
+                                        Counts every topic–publication link.
+                                        One paper may contribute to multiple topics.
+                                    </span>
+                                </div>
+
+                                <div>
+                                    <strong>Unique frequency</strong>
+                                    <span>
+                                        Counts each publication once within the
+                                        selected topic group.
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div
+                                class="documentation-equation-box documentation-frequency-equations"
+                                aria-label="Aggregated and unique frequency equations"
+                            >
+                                <div class="documentation-frequency-equation">
+                                    <span><i>f</i><sub>aggregated</sub></span>
+                                    <span class="documentation-equation-operator">=</span>
+                                    <span>Σ<sub><i>t</i>=1</sub><sup><i>x</i></sup></span>
+                                    <span class="documentation-set-bars">
+                                        P<sub>topic <i>t</i></sub>
+                                    </span>
+                                </div>
+
+                                <div class="documentation-frequency-equation">
+                                    <span><i>f</i><sub>unique</sub></span>
+                                    <span class="documentation-equation-operator">=</span>
+                                    <span class="documentation-set-bars">
+                                        ∪<sub><i>t</i>=1</sub><sup><i>x</i></sup>
+                                        P<sub>topic <i>t</i></sub>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             Platform guide
+        ================================================== -->
+        <section
+            id="platform-guide"
+            class="documentation-section documentation-guide"
+        >
+            <div class="analysis-inner documentation-inner">
+
+                <header class="documentation-section-heading">
+                    <div>
+                        <p class="section-label">
+                            How to use the explorer
+                        </p>
+
+                        <h2>
+                            Platform Guide
+                        </h2>
+                    </div>
+
+                    <p class="documentation-section-description">
+                        Learn how to navigate, interact with, and interpret the platform.
+                    </p>
+                </header>
+
+
+                <div class="documentation-guide-grid">
+
+                    <article class="documentation-guide-card">
+                        <p class="documentation-card-label">
+                            Trending
+                        </p>
+
+                        <h3>
+                            Compare research intensity
+                        </h3>
+
+                        <p>
+                            Bubble position shows topic frequency in two
+                            periods, color represents the trend factor, and
+                            bubble size represents the selected associated
+                            metric.
+                        </p>
+
+                        <div class="documentation-chips">
+                            <span>Hover</span>
+                            <span>Zoom</span>
+                            <span>Legend</span>
+                            <span>Period tabs</span>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-guide-card">
+                        <p class="documentation-card-label">
+                            Patterns
+                        </p>
+
+                        <h3>
+                            Explore temporal trajectories
+                        </h3>
+
+                        <p>
+                            Compare continuously increasing and decreasing
+                            topics with Λ-shaped, V-shaped, and wave-shaped
+                            temporal trajectories.
+                        </p>
+
+                        <div class="documentation-chips">
+                            <span>Pattern tabs</span>
+                            <span>Hover</span>
+                            <span>Topic labels</span>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-guide-card">
+                        <p class="documentation-card-label">
+                            Domains
+                        </p>
+
+                        <h3>
+                            Navigate the 18 domains
+                        </h3>
+
+                        <p>
+                            Select a domain to view its temporal profile,
+                            hierarchy, major topics, and geographical research
+                            distribution.
+                        </p>
+
+                        <div class="documentation-chips">
+                            <span>Domain selector</span>
+                            <span>Hierarchy</span>
+                            <span>Hover</span>
+                            <span>Switch views</span>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-guide-card">
+                        <p class="documentation-card-label">
+                            Panels
+                        </p>
+
+                        <h3>
+                            Read hierarchical sunbursts
+                        </h3>
+
+                        <p>
+                            Sector size represents publication frequency.
+                            Moving outward reveals progressively finer
+                            classifications.
+                        </p>
+
+                        <div class="documentation-chips">
+                            <span>Hover</span>
+                            <span>Click</span>
+                            <span>Expand</span>
+                            <span>Reset</span>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-guide-card">
+                        <p class="documentation-card-label">
+                            Temporal Dynamics
+                        </p>
+
+                        <h3>
+                            Control topic trends
+                        </h3>
+
+                        <p>
+                            Select a panel, choose normalized or absolute
+                            frequency, and control how many topics are displayed
+                            in the temporal view.
+                        </p>
+
+                        <div class="documentation-chips">
+                            <span>Panel</span>
+                            <span>Frequency</span>
+                            <span>Top N</span>
+                            <span>Legend</span>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-guide-card">
+                        <p class="documentation-card-label">
+                            Classification Evolution
+                        </p>
+
+                        <h3>
+                            Animate hierarchical change
+                        </h3>
+
+                        <p>
+                            Select a panel and use playback or year controls to
+                            observe changes in hierarchy composition across
+                            time.
+                        </p>
+
+                        <div class="documentation-chips">
+                            <span>Panel</span>
+                            <span>Play</span>
+                            <span>Pause</span>
+                            <span>Year slider</span>
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <div class="documentation-guide-summary-grid">
+
+                    <article class="documentation-guide-summary">
+                        <p class="documentation-card-label">
+                            Interaction
+                        </p>
+
+                        <h3>
+                            Common controls
+                        </h3>
+
+                        <ul>
+                            <li>
+                                Hover over visual objects to reveal detailed
+                                information.
+                            </li>
+
+                            <li>
+                                Click legend items to hide or show categories.
+                            </li>
+
+                            <li>
+                                Double-click a legend item to isolate one
+                                category or restore all.
+                            </li>
+
+                            <li>
+                                Use the chart mode bar where zooming, panning,
+                                resetting, or exporting is enabled.
+                            </li>
+                        </ul>
+                    </article>
+
+
+                    <article class="documentation-guide-summary">
+                        <p class="documentation-card-label">
+                            Interpretation
+                        </p>
+
+                        <h3>
+                            Reading visual encodings
+                        </h3>
+
+                        <ul>
+                            <li>
+                                Larger objects generally indicate greater
+                                publication frequency.
+                            </li>
+
+                            <li>
+                                Color may indicate domain identity or temporal
+                                trend direction.
+                            </li>
+
+                            <li>
+                                Normalized frequency supports comparison across
+                                periods with different publication volumes.
+                            </li>
+
+                            <li>
+                                Absolute frequency reflects the original
+                                topic-publication count.
+                            </li>
+                        </ul>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             Authors and resources
+        ================================================== -->
+        <section
+            id="authors-resources"
+            class="documentation-section documentation-resources"
+        >
+            <div class="analysis-inner documentation-inner">
+
+                <header class="documentation-section-heading">
+                    <div>
+                        <p class="section-label">
+                            Project information
+                        </p>
+
+                        <h2>
+                            Authors &amp; Resources
+                        </h2>
+                    </div>
+
+                    <p class="documentation-section-description">
+                        Project contributors, associated publication, reusable
+                        resources, contact information, and citation guidance.
+                    </p>
+                </header>
+
+
+                <div class="documentation-author-grid">
+
+                    <article class="documentation-author-card">
+                        <div class="documentation-author-photo" aria-hidden="true">
+                            A1
+                        </div>
+
+                        <h3>
+                            Author Name
+                        </h3>
+
+                        <p class="documentation-author-role">
+                            Lead author · Platform development
+                        </p>
+
+                        <p class="documentation-author-affiliation">
+                            Department and institution.
+                        </p>
+
+                        <p class="documentation-author-interests">
+                            Research interests: environmental data science,
+                            contaminants, and machine learning.
+                        </p>
+
+                        <div class="documentation-links">
+                            <a href="#">
+                                Profile
+                            </a>
+
+                            <a href="#">
+                                ORCID
+                            </a>
+
+                            <a href="#">
+                                Email
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-author-card">
+                        <div class="documentation-author-photo" aria-hidden="true">
+                            A2
+                        </div>
+
+                        <h3>
+                            Author Name
+                        </h3>
+
+                        <p class="documentation-author-role">
+                            Co-author
+                        </p>
+
+                        <p class="documentation-author-affiliation">
+                            Department and institution.
+                        </p>
+
+                        <p class="documentation-author-interests">
+                            Research interests: contaminant chemistry,
+                            environmental processes, and risk assessment.
+                        </p>
+
+                        <div class="documentation-links">
+                            <a href="#">
+                                Profile
+                            </a>
+
+                            <a href="#">
+                                ORCID
+                            </a>
+
+                            <a href="#">
+                                Email
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-author-card">
+                        <div class="documentation-author-photo" aria-hidden="true">
+                            A3
+                        </div>
+
+                        <h3>
+                            Author Name
+                        </h3>
+
+                        <p class="documentation-author-role">
+                            Co-author
+                        </p>
+
+                        <p class="documentation-author-affiliation">
+                            Department and institution.
+                        </p>
+
+                        <p class="documentation-author-interests">
+                            Research interests: bibliometrics, natural language
+                            processing, and environmental classification.
+                        </p>
+
+                        <div class="documentation-links">
+                            <a href="#">
+                                Profile
+                            </a>
+
+                            <a href="#">
+                                ORCID
+                            </a>
+
+                            <a href="#">
+                                Email
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-author-card">
+                        <div class="documentation-author-photo" aria-hidden="true">
+                            A4
+                        </div>
+
+                        <h3>
+                            Author Name
+                        </h3>
+
+                        <p class="documentation-author-role">
+                            Corresponding author
+                        </p>
+
+                        <p class="documentation-author-affiliation">
+                            Department and institution.
+                        </p>
+
+                        <p class="documentation-author-interests">
+                            Research interests: environmental engineering,
+                            research trends, and science communication.
+                        </p>
+
+                        <div class="documentation-links">
+                            <a href="#">
+                                Profile
+                            </a>
+
+                            <a href="#">
+                                ORCID
+                            </a>
+
+                            <a href="#">
+                                Email
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <div class="documentation-resource-grid">
+
+                    <article class="documentation-resource-card">
+                        <p class="documentation-card-label">
+                            Publication
+                        </p>
+
+                        <h3>
+                            Associated paper
+                        </h3>
+
+                        <p>
+                            Add the final article title, journal citation, DOI,
+                            and publication link.
+                        </p>
+
+                        <div class="documentation-links">
+                            <a href="#">
+                                Read paper
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-resource-card">
+                        <p class="documentation-card-label">
+                            Data and code
+                        </p>
+
+                        <h3>
+                            Project resources
+                        </h3>
+
+                        <p>
+                            Add links to archived datasets, keyword tables,
+                            code, and reusable visualization components.
+                        </p>
+
+                        <div class="documentation-links">
+                            <a href="#">
+                                GitHub
+                            </a>
+
+                            <a href="#">
+                                Dataset
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="documentation-resource-card">
+                        <p class="documentation-card-label">
+                            Platform information
+                        </p>
+
+                        <h3>
+                            Version and contact
+                        </h3>
+
+                        <p>
+                            Add the current platform version, last updated date,
+                            license, acknowledgements, and contact details.
+                        </p>
+
+                        <div class="documentation-links">
+                            <a href="#">
+                                Contact
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <article class="documentation-citation">
+                    <div class="documentation-citation-header">
+                        <div>
+                            <p class="documentation-card-label">
+                                Citation
+                            </p>
+
+                            <h3>
+                                Suggested citation
+                            </h3>
+                        </div>
+
+                        <button
+                            id="copy-citation"
+                            class="documentation-copy-button"
+                            type="button"
+                        >
+                            Copy citation
+                        </button>
+                    </div>
+
+                    <p
+                        id="citation-text"
+                        class="documentation-citation-text"
+                    >
+                        Author(s). Paper title. Environmental Science &amp;
+                        Technology, 2026. DOI: add DOI here.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         Footer
+    ====================================================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <div>
+                <p class="footer-title">
+                    Contaminants &amp; Stressors Explorer
+                </p>
+
+                <p class="footer-description">
+                    Interactive exploration of environmental research evolution
+                    from 1967 to 2026.
+                </p>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; <span id="current-year">2026</span>
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+    <script>
+        (function () {
+            "use strict";
+
+            const toggleButtons = document.querySelectorAll(
+                ".documentation-toggle"
+            );
+
+            toggleButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    const details = button.nextElementSibling;
+
+                    if (!details) {
+                        return;
+                    }
+
+                    const isOpen =
+                        button.getAttribute("aria-expanded") === "true";
+
+                    button.setAttribute(
+                        "aria-expanded",
+                        String(!isOpen)
+                    );
+
+                    details.hidden = isOpen;
+                    button.textContent = isOpen
+                        ? "Show details"
+                        : "Hide details";
+                });
+            });
+
+
+            const navigationLinks = Array.from(
+                document.querySelectorAll(
+                    ".documentation-navigation .context-link"
+                )
+            );
+
+            const documentationSections = navigationLinks
+                .map(function (link) {
+                    return {
+                        link: link,
+                        section: document.querySelector(
+                            link.getAttribute("href")
+                        )
+                    };
+                })
+                .filter(function (item) {
+                    return item.section;
+                });
+
+            function activateNavigation(targetId) {
+                navigationLinks.forEach(function (link) {
+                    link.classList.toggle(
+                        "active",
+                        link.getAttribute("href") === targetId
+                    );
+                });
+            }
+
+            navigationLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    activateNavigation(link.getAttribute("href"));
+                });
+            });
+
+            function updateActiveSection() {
+                const navigation = document.querySelector(
+                    ".documentation-navigation"
+                );
+
+                const marker =
+                    window.scrollY +
+                    (navigation ? navigation.offsetHeight : 0) +
+                    100;
+
+                let currentSection = documentationSections.length
+                    ? "#" + documentationSections[0].section.id
+                    : "";
+
+                documentationSections.forEach(function (item) {
+                    if (item.section.offsetTop <= marker) {
+                        currentSection = "#" + item.section.id;
+                    }
+                });
+
+                const pageBottomReached =
+                    window.innerHeight + window.scrollY >=
+                    document.documentElement.scrollHeight - 5;
+
+                if (pageBottomReached && documentationSections.length) {
+                    currentSection =
+                        "#" +
+                        documentationSections[
+                            documentationSections.length - 1
+                        ].section.id;
+                }
+
+                activateNavigation(currentSection);
+            }
+
+            let scrollScheduled = false;
+
+            window.addEventListener(
+                "scroll",
+                function () {
+                    if (scrollScheduled) {
+                        return;
+                    }
+
+                    scrollScheduled = true;
+
+                    window.requestAnimationFrame(function () {
+                        updateActiveSection();
+                        scrollScheduled = false;
+                    });
+                },
+                { passive: true }
+            );
+
+            window.addEventListener("resize", updateActiveSection);
+            window.addEventListener("load", updateActiveSection);
+
+
+            const copyButton = document.getElementById("copy-citation");
+            const citationText = document.getElementById("citation-text");
+
+            if (copyButton && citationText) {
+                copyButton.addEventListener("click", async function () {
+                    try {
+                        await navigator.clipboard.writeText(
+                            citationText.textContent.trim()
+                        );
+
+                        copyButton.textContent = "Copied";
+
+                        window.setTimeout(function () {
+                            copyButton.textContent = "Copy citation";
+                        }, 1400);
+                    } catch (error) {
+                        copyButton.textContent = "Copy failed";
+
+                        window.setTimeout(function () {
+                            copyButton.textContent = "Copy citation";
+                        }, 1400);
+                    }
+                });
+            }
+        })();
+    </script>
+
+</body>
+</html>

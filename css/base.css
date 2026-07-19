@@ -1,0 +1,302 @@
+/* =========================================================
+   Root variables
+========================================================= */
+
+:root {
+    --page-width: 1500px;
+    --analysis-width: 1500px;
+
+    --text: #17221f;
+    --muted: #66736f;
+    --line: rgba(23, 34, 31, 0.12);
+
+    --surface: #f4f7f5;
+    --accent: #255f52;
+    --accent-dark: #183f37;
+    --hover-background: rgba(37, 95, 82, 0.055);
+
+    --white: #ffffff;
+    --footer-background: #14211e;
+
+    --header-height: 76px;
+}
+
+
+/* =========================================================
+   Base
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--text);
+    background: var(--white);
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   Shared layout
+========================================================= */
+
+.section {
+    padding: 110px 28px;
+}
+
+.section-inner,
+.header-inner,
+.footer-inner {
+    width: min(100%, var(--page-width));
+    margin: 0 auto;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 64px;
+}
+
+.section-label {
+    margin: 0 0 14px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+}
+
+.section-introduction {
+    max-width: 640px;
+    margin: 22px 0 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   Shared header and navigation
+========================================================= */
+
+.site-header {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    color: var(--white);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 28px;
+}
+
+.site-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.05;
+}
+
+.site-brand-title {
+    font-size: 0.92rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+}
+
+.site-brand-subtitle {
+    margin-top: 5px;
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    opacity: 0.74;
+    text-transform: uppercase;
+}
+
+.primary-navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    position: relative;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.76;
+    transition:
+        opacity 180ms ease,
+        transform 180ms ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    opacity: 1;
+}
+
+.nav-link::after {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    height: 1px;
+    content: "";
+    background: currentColor;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition:
+        opacity 180ms ease,
+        transform 180ms ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    opacity: 0.9;
+    transform: scaleX(1);
+}
+
+
+/* =========================================================
+   Footer
+========================================================= */
+
+.site-footer {
+    padding: 52px 28px;
+    color: rgba(255, 255, 255, 0.78);
+    background: var(--footer-background);
+}
+
+.footer-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-title {
+    margin: 0;
+    color: var(--white);
+    font-size: 0.94rem;
+    font-weight: 650;
+}
+
+.footer-description {
+    max-width: 520px;
+    margin: 10px 0 0;
+    font-size: 0.84rem;
+    line-height: 1.55;
+}
+
+.footer-copyright {
+    margin: 0;
+    font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   Responsive: tablets
+========================================================= */
+
+@media (max-width: 900px) {
+    .primary-navigation {
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* =========================================================
+   Responsive: small screens
+========================================================= */
+
+@media (max-width: 680px) {
+    :root {
+        --header-height: 68px;
+    }
+
+    .section {
+        padding: 78px 20px;
+    }
+
+    .header-inner {
+        padding: 0 20px;
+    }
+
+    .site-brand-subtitle {
+        display: none;
+    }
+
+    .primary-navigation {
+        display: none;
+    }
+
+    .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+/* =========================================================
+   Reduced-motion accessibility
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

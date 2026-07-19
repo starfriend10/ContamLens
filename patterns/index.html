@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Interactive heatmaps of prevalent contaminant and stressor topics and their distinctive temporal patterns."
+    >
+
+    <title>Patterns | Contaminants &amp; Stressors Explorer</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/analysis.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+<body class="analysis-page patterns-page">
+
+    <!-- =====================================================
+         Site header
+    ====================================================== -->
+    <header class="analysis-header">
+        <div class="header-inner">
+
+            <a class="site-brand" href="../">
+                <span class="site-brand-title">
+                    Contaminants &amp; Stressors
+                </span>
+
+                <span class="site-brand-subtitle">
+                    Explorer
+                </span>
+            </a>
+
+            <nav class="primary-navigation" aria-label="Primary navigation">
+
+                <a class="nav-link" href="../">
+                    Home
+                </a>
+
+                <a class="nav-link" href="../trending/">
+                    Trending
+                </a>
+
+                <a class="nav-link active" href="../patterns/">
+                    Patterns
+                </a>
+
+                <a class="nav-link" href="../domains/">
+                    Domains
+                </a>
+
+                <a class="nav-link" href="../panels/">
+                    Panels
+                </a>
+
+                <a class="nav-link" href="../documentation/">
+                    Documentation
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =====================================================
+         Main content
+    ====================================================== -->
+    <main class="analysis-main">
+
+        <!-- Compact introduction -->
+        <section class="analysis-intro">
+            <div class="analysis-inner analysis-intro-grid">
+
+                <div>
+                    <h1>
+                        Patterns
+                    </h1>
+                </div>
+
+                <div>
+                    <p class="section-label">
+                        Temporal pattern analysis
+                    </p>
+
+                    <p class="analysis-description">
+                        Explore prevalent topics and their distinctive temporal
+                        trajectories across six decades.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             Pattern switcher
+        ================================================== -->
+        <nav
+            class="context-navigation"
+            aria-label="Temporal pattern categories"
+        >
+            <div class="analysis-inner context-navigation-inner">
+
+                <button
+                    class="context-link active"
+                    type="button"
+                    data-figure="../figures/patterns/patterns_top_1_50.html"
+                    data-title="Highest-frequency topics: Ranks 1–50"
+                    data-label="Top 1–50"
+                    data-description="The 50 most prevalent keyword-level topics over the complete study period."
+                    data-height="1100"
+                >
+                    Top 1–50
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/patterns/patterns_top_51_100.html"
+                    data-title="Highest-frequency topics: Ranks 51–100"
+                    data-label="Top 51–100"
+                    data-description="Keyword-level topics ranked 51–100 by overall prevalence."
+                    data-height="1100"
+                >
+                    Top 51–100
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/patterns/patterns_continuous_up.html"
+                    data-title="Continuously increasing topics"
+                    data-label="Continuous Up"
+                    data-description="Topics exhibiting sustained increases across successive historical periods."
+                    data-height="600"
+                >
+                    Continuous Up
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/patterns/patterns_continuous_down.html"
+                    data-title="Continuously decreasing topics"
+                    data-label="Continuous Down"
+                    data-description="Topics exhibiting sustained decreases across successive historical periods."
+                    data-height="140"
+                >
+                    Continuous Down
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/patterns/patterns_lambda.html"
+                    data-title="Λ-shaped topics"
+                    data-label="Λ-shape"
+                    data-description="Topics showing an increase followed by a subsequent decline."
+                    data-height="700"
+                >
+                    Λ-shape
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/patterns/patterns_vshape.html"
+                    data-title="V-shaped topics"
+                    data-label="V-shape"
+                    data-description="Topics showing renewed research attention following an earlier decline."
+                    data-height="230"
+                >
+                    V-shape
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/patterns/patterns_wave.html"
+                    data-title="Wave-shaped topics"
+                    data-label="Wave"
+                    data-description="Topics exhibiting multiple phases of increasing and decreasing research activity."
+                    data-height="300"
+                >
+                    Wave
+                </button>
+
+            </div>
+        </nav>
+
+
+        <!-- =================================================
+             Interactive figure viewer
+        ================================================== -->
+        <section class="figure-viewer-section">
+            <div class="figure-viewer-inner">
+
+                <header class="compact-figure-heading">
+
+                    <div>
+                        <p id="figure-label" class="figure-label">
+                            Top 1–50
+                        </p>
+
+                        <h2 id="figure-title">
+                            Highest-frequency topics: Ranks 1–50
+                        </h2>
+                    </div>
+
+                    <div class="figure-heading-right">
+
+                        <p id="figure-description" class="figure-description">
+                            The 50 most prevalent keyword-level topics over the
+                            complete study period.
+                        </p>
+
+                        <p class="figure-instruction">
+                            Hover over cells for topic details. Use the
+                            toolbar to zoom, pan, save, or reset the view.
+                        </p>
+
+                    </div>
+
+                </header>
+
+
+                <div
+                    id="analysis-figure-frame"
+                    class="interactive-figure-frame"
+                    style="height: 1300px;"
+                >
+                    <iframe
+                        id="analysis-figure"
+                        src="../figures/patterns/patterns_top_1_50.html"
+                        title="Top 1–50 temporal pattern heatmap"
+                        loading="eager"
+                        scrolling="no"
+                        style="height: 1300px;"
+                    ></iframe>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             Reading guide
+        ================================================== -->
+        <section class="reading-guide">
+            <div class="analysis-inner reading-guide-inner">
+
+                <p>
+                    Heatmap colors represent the relative topic intensity
+                    observed across time.
+                </p>
+
+                <p>
+                    Topics are ordered by overall prevalence within the selected temporal-pattern category.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         Footer
+    ====================================================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+
+            <div>
+                <p class="footer-title">
+                    Contaminants &amp; Stressors Explorer
+                </p>
+
+                <p class="footer-description">
+                    Interactive exploration of environmental research evolution
+                    from 1967 to 2026.
+                </p>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; <span id="current-year">2026</span>
+            </p>
+
+        </div>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

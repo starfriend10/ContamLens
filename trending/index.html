@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Interactive quadrant-based trending analysis of environmental contaminant and stressor topics."
+    >
+
+    <title>Trending | Contaminants &amp; Stressors Explorer</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/analysis.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+<body class="analysis-page">
+
+    <!-- =====================================================
+         Site Header
+    ====================================================== -->
+    <header class="analysis-header">
+        <div class="header-inner">
+
+            <a class="site-brand" href="../">
+                <span class="site-brand-title">
+                    Contaminants &amp; Stressors
+                </span>
+
+                <span class="site-brand-subtitle">
+                    Explorer
+                </span>
+            </a>
+
+            <nav class="primary-navigation" aria-label="Primary navigation">
+                
+                <a class="nav-link" href="../">
+                    Home
+                </a>
+
+                <a class="nav-link active" href="../trending/">
+                    Trending
+                </a>
+
+                <a class="nav-link" href="../patterns/">
+                    Patterns
+                </a>
+
+                <a class="nav-link" href="../domains/">
+                    Domains
+                </a>
+
+                <a class="nav-link" href="../panels/">
+                    Panels
+                </a>
+
+                <a class="nav-link" href="../documentation/">
+                    Documentation
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =====================================================
+         Main Content
+    ====================================================== -->
+    <main class="analysis-main">
+
+        <!-- Compact title section -->
+        <section class="analysis-intro">
+            <div class="analysis-inner analysis-intro-grid">
+
+                <div>
+                    <h1>Trending</h1>
+                </div>
+
+                <div>
+                    <p class="section-label">
+                        Temporal trending analysis
+                    </p>
+
+                    <p class="analysis-description">
+                        Explore temporal changes in research topics through pairwise
+                        comparisons of four historical periods using interactive
+                        quadrant-based bubble plots.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contextual figure switcher -->
+        <nav
+            class="context-navigation"
+            aria-label="Trending analysis periods"
+        >
+            <div class="analysis-inner context-navigation-inner">
+
+                <button
+                    class="context-link active"
+                    type="button"
+                    data-figure="../figures/trending/trending_overview.html"
+                    data-title="Topic changes across four historical period comparisons"
+                    data-label="Interactive overview"
+                    data-description="Combined overview of the four historical period comparisons."
+                >
+                    Overview
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/trending/trending_QIII_P1_vs_P2.html"
+                    data-title="P1 (1967–1981) vs. P2 (1982–1996)"
+                    data-label="P1 vs. P2"
+                    data-description="Comparison of topic intensity between the first and second historical periods."
+                >
+                    P1 vs. P2
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/trending/trending_QIV_P2_vs_P3.html"
+                    data-title="P2 (1982–1996) vs. P3 (1997–2011)"
+                    data-label="P2 vs. P3"
+                    data-description="Comparison of topic intensity between the second and third historical periods."
+                >
+                    P2 vs. P3
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/trending/trending_QI_P3_vs_P4.html"
+                    data-title="P3 (1997–2011) vs. P4 (2012–2026)"
+                    data-label="P3 vs. P4"
+                    data-description="Comparison of topic intensity between the third and fourth historical periods."
+                >
+                    P3 vs. P4
+                </button>
+
+                <button
+                    class="context-link"
+                    type="button"
+                    data-figure="../figures/trending/trending_QII_P1_vs_P4.html"
+                    data-title="P1 (1967–1981) vs. P4 (2012–2026)"
+                    data-label="P1 vs. P4"
+                    data-description="Long-term comparison between the earliest and most recent historical periods."
+                >
+                    P1 vs. P4
+                </button>
+
+            </div>
+        </nav>
+
+
+        <!-- Main interactive figure -->
+        <section class="figure-section figure-viewer-section">
+            <div class="figure-viewer-inner">
+
+                <header class="figure-heading compact-figure-heading">
+
+                    <div>
+                        <p id="figure-label" class="figure-label">
+                            Interactive overview
+                        </p>
+
+                        <h2 id="figure-title">
+                            Topic changes across four periods
+                        </h2>
+                    </div>
+
+                    <div class="figure-heading-right">
+                        <p id="figure-description" class="figure-description">
+                            Combined overview of the four period comparisons.
+                        </p>
+
+                        <p class="figure-instruction">
+                            Hover over bubbles for topic details. Use the
+                            toolbar to zoom, pan, save, or reset the view.
+                        </p>
+                    </div>
+
+                </header>
+
+
+                <div class="interactive-figure-frame">
+
+                    <iframe
+                        id="trending-figure"
+                        src="../figures/trending/trending_overview.html"
+                        title="Trending overview interactive figure"
+                        loading="eager"
+                        scrolling="no"
+                    ></iframe>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Compact reading guide -->
+        <section class="reading-guide">
+            <div class="analysis-inner reading-guide-inner">
+
+                <p>
+                    Bubble positions compare normalized frequencies between two
+                    periods, while bubble size represents topic prevalence.
+                </p>
+
+                <p>
+                    Hover information provides topic names, peroidic windows, past 
+                    frequencies, current frequencies, trend factors, and geographical popularity.
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         Footer
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <p class="footer-title">
+                    Contaminants &amp; Stressors Explorer
+                </p>
+
+                <p class="footer-description">
+                    Interactive exploration of environmental research evolution
+                    from 1967 to 2026.
+                </p>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; <span id="current-year">2026</span>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

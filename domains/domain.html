@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore the classification, research frequency, and geographic distribution of an environmental contaminant or stressor domain."
+    >
+
+    <title>
+        Domain Details | Contaminants &amp; Stressors Explorer
+    </title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/analysis.css">
+    <link rel="stylesheet" href="../css/pages.css">
+
+    <!-- Plotly for the frequency chart and world map -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+
+
+<body class="analysis-page domain-detail-page">
+
+    <!-- =====================================================
+         Site header
+    ====================================================== -->
+    <header class="analysis-header">
+
+        <div class="header-inner">
+
+            <a
+                class="site-brand"
+                href="../"
+            >
+                <span class="site-brand-title">
+                    Contaminants &amp; Stressors
+                </span>
+
+                <span class="site-brand-subtitle">
+                    Explorer
+                </span>
+            </a>
+
+
+            <nav
+                class="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a
+                    class="nav-link"
+                    href="../"
+                >
+                    Home
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../trending/"
+                >
+                    Trending
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../patterns/"
+                >
+                    Patterns
+                </a>
+
+                <a
+                    class="nav-link active"
+                    href="./"
+                >
+                    Domains
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../panels/"
+                >
+                    Panels
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../documentation/"
+                >
+                    Documentation
+                </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         Main content
+    ====================================================== -->
+    <main class="analysis-main">
+
+        <!-- =================================================
+             Domain introduction
+        ================================================== -->
+        <section class="analysis-intro">
+
+            <div class="analysis-inner analysis-intro-grid">
+
+                <div>
+
+                    <p class="domain-detail-back">
+                        <a href="./">
+                            ← Back to Domains
+                        </a>
+                    </p>
+
+                    <h1 id="domain-detail-title">
+                        Domain
+                    </h1>
+
+                </div>
+
+
+                <div>
+
+                    <p class="section-label">
+                        Domain-level analysis
+                    </p>
+
+                    <p
+                        id="domain-detail-description"
+                        class="analysis-description"
+                    >
+                        Loading domain classification, frequency, and
+                        geographic coverage.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             Domain selector and summary statistics
+        ================================================== -->
+        <nav
+            class="context-navigation domain-detail-navigation"
+            aria-label="Domain selection"
+        >
+
+            <div class="analysis-inner domain-selector-inner">
+
+                <label
+                    class="domain-selector-label"
+                    for="domain-selector"
+                >
+                    Domain
+                </label>
+
+                <select
+                    id="domain-selector"
+                    class="domain-selector"
+                    aria-label="Select another domain"
+                >
+                    <option value="">
+                        Loading domains...
+                    </option>
+                </select>
+
+
+                <div
+                    id="domain-summary-statistics"
+                    class="domain-summary-statistics"
+                    aria-live="polite"
+                >
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =================================================
+             Loading state
+        ================================================== -->
+        <section
+            id="domain-loading"
+            class="domain-status"
+        >
+            <div class="analysis-inner">
+                Loading interactive domain data...
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             Error state
+        ================================================== -->
+        <section
+            id="domain-error"
+            class="domain-status domain-status-error"
+            hidden
+        >
+            <div class="analysis-inner">
+                The selected domain could not be loaded. Check that
+                <code>data/domain_data.json</code> is available and that
+                the website is opened through the local server.
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             Interactive domain dashboard
+        ================================================== -->
+        <section
+            id="domain-dashboard"
+            class="domain-dashboard"
+            hidden
+        >
+
+            <div class="domain-dashboard-inner">
+
+                <!-- =========================================
+                     Classification hierarchy
+                ========================================== -->
+                <section class="domain-panel hierarchy-panel">
+
+                    <header class="domain-panel-heading">
+
+                        <div>
+
+                            <p class="figure-label">
+                                Classification
+                            </p>
+
+                            <h2>
+                                Domain hierarchy
+                            </h2>
+
+                        </div>
+
+
+                        <div class="hierarchy-actions">
+
+                            <button
+                                id="expand-hierarchy"
+                                class="small-control-button"
+                                type="button"
+                            >
+                                Expand all
+                            </button>
+
+                            <button
+                                id="collapse-hierarchy"
+                                class="small-control-button"
+                                type="button"
+                            >
+                                Collapse
+                            </button>
+
+                        </div>
+
+                    </header>
+
+
+                    <p class="domain-panel-description">
+                        Expand branches to explore the classification from
+                        broad categories to consolidated keyword-level topics.
+                        Select a topic to update its geographic distribution.
+                    </p>
+
+
+                    <div
+                        id="classification-tree"
+                        class="classification-tree"
+                        aria-label="Expandable domain classification hierarchy"
+                    >
+                    </div>
+
+                </section>
+
+
+                <!-- =========================================
+                     Frequency visualization
+                ========================================== -->
+                <section class="domain-panel frequency-panel">
+
+                    <header class="domain-panel-heading">
+
+                        <div>
+
+                            <p class="figure-label">
+                                Research frequency
+                            </p>
+
+                            <h2>
+                                Frequency ranking
+                            </h2>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="domain-controls">
+
+                        <label class="domain-control">
+
+                            <span>
+                                Classification level
+                            </span>
+
+                            <select id="frequency-level">
+
+                                <option value="level_2">
+                                    Level 2
+                                </option>
+
+                                <option value="level_3">
+                                    Level 3
+                                </option>
+
+                                <option value="level_4">
+                                    Level 4
+                                </option>
+
+                                <option
+                                    value="level_5"
+                                    selected
+                                >
+                                    Level 5 topics
+                                </option>
+
+                            </select>
+
+                        </label>
+
+
+                        <label class="domain-control">
+
+                            <span>
+                                Metric
+                            </span>
+
+                            <select id="frequency-metric">
+
+                                <option
+                                    value="frequency"
+                                    selected
+                                >
+                                    Publication frequency
+                                </option>
+
+                                <option value="normalized_frequency_total">
+                                    Overall normalized frequency
+                                </option>
+
+                                <option value="normalized_frequency_avg">
+                                    Mean annual normalized frequency
+                                </option>
+
+                            </select>
+
+                        </label>
+
+
+                        <label class="domain-control">
+
+                            <span>
+                                Entries
+                            </span>
+
+                            <select id="frequency-top-n">
+
+                                <option value="10">
+                                    Top 10
+                                </option>
+
+                                <option
+                                    value="20"
+                                    selected
+                                >
+                                    Top 20
+                                </option>
+
+                                <option value="all">
+                                    All
+                                </option>
+
+                            </select>
+
+                        </label>
+
+                    </div>
+
+
+                    <p class="domain-panel-description">
+                        Hover over bars for topic, classification, and
+                        frequency details.
+                    </p>
+
+
+                    <div
+                        id="domain-frequency-chart"
+                        class="domain-plot domain-frequency-chart"
+                        aria-label="Interactive domain frequency ranking"
+                    >
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- =============================================
+                 Full-width geographic distribution
+            ============================================== -->
+            <div class="domain-geography-inner">
+
+                <section class="domain-panel geography-panel">
+
+                    <header class="domain-panel-heading">
+
+                        <div>
+
+                            <p class="figure-label">
+                                Geographic coverage
+                            </p>
+
+                            <h2>
+                                Research distribution
+                            </h2>
+
+                        </div>
+
+                    </header>
+
+
+                    <div class="domain-controls geography-controls">
+
+                        <label class="domain-control domain-control-wide">
+
+                            <span>
+                                Geographic view
+                            </span>
+
+                            <select id="geography-topic">
+
+                                <option
+                                    value="__DOMAIN__"
+                                    selected
+                                >
+                                    Entire domain
+                                </option>
+
+                            </select>
+
+                        </label>
+
+                    </div>
+
+
+                    <p class="domain-panel-description">
+                        Hover over countries or regions for publication
+                        counts. Select a Level 5 topic to update the map.
+                    </p>
+
+
+                    <div
+                        id="domain-geography-map"
+                        class="domain-plot domain-geography-map"
+                        aria-label="Interactive world map of domain research distribution"
+                    >
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         Footer
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div>
+
+                <p class="footer-title">
+                    Contaminants &amp; Stressors Explorer
+                </p>
+
+                <p class="footer-description">
+                    Interactive exploration of environmental research
+                    evolution from 1967 to 2026.
+                </p>
+
+            </div>
+
+
+            <p class="footer-copyright">
+                &copy;
+                <span id="current-year">
+                    2026
+                </span>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Shared website JavaScript -->
+    <script src="../js/main.js"></script>
+
+    <!-- Domain-detail data and visualization JavaScript -->
+    <script src="../js/domain-detail.js"></script>
+
+</body>
+
+</html>

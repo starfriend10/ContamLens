@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Explore the five-level classification and 18 environmental contaminant and stressor domains."
+    >
+
+    <title>
+        Domains | Contaminants &amp; Stressors Explorer
+    </title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/analysis.css">
+    <link rel="stylesheet" href="../css/pages.css">
+
+</head>
+
+
+<body class="analysis-page domains-page">
+
+    <!-- =====================================================
+         Site header
+    ====================================================== -->
+    <header class="analysis-header">
+
+        <div class="header-inner">
+
+            <a
+                class="site-brand"
+                href="../"
+            >
+                <span class="site-brand-title">
+                    Contaminants &amp; Stressors
+                </span>
+
+                <span class="site-brand-subtitle">
+                    Explorer
+                </span>
+            </a>
+
+
+            <nav
+                class="primary-navigation"
+                aria-label="Primary navigation"
+            >
+                <a
+                    class="nav-link"
+                    href="../"
+                >
+                    Home
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../trending/"
+                >
+                    Trending
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../patterns/"
+                >
+                    Patterns
+                </a>
+
+                <a
+                    class="nav-link active"
+                    href="../domains/"
+                >
+                    Domains
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../panels/"
+                >
+                    Panels
+                </a>
+
+                <a
+                    class="nav-link"
+                    href="../documentation/"
+                >
+                    Documentation
+                </a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         Main content
+    ====================================================== -->
+    <main class="analysis-main">
+
+        <!-- =================================================
+             Page introduction
+        ================================================== -->
+        <section class="analysis-intro">
+
+            <div class="analysis-inner analysis-intro-grid">
+
+                <div>
+                    <h1>
+                        Domains
+                    </h1>
+                </div>
+
+
+                <div>
+                    <p class="section-label">
+                        Contaminant and stressor classification
+                    </p>
+
+                    <p class="analysis-description">
+                        Explore 18 domains and their underlying
+                        keyword-level classification.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             Domain view tabs
+        ================================================== -->
+        <nav
+            class="context-navigation"
+            aria-label="Domain views"
+        >
+            <div class="analysis-inner context-navigation-inner">
+
+                <button
+                    class="context-link active domain-view-button"
+                    type="button"
+                    data-domain-view="classification-overview-view"
+                    aria-selected="true"
+                >
+                    Classification Overview
+                </button>
+
+                <button
+                    class="context-link domain-view-button"
+                    type="button"
+                    data-domain-view="domain-grid-view"
+                    aria-selected="false"
+                >
+                    Domain Grid
+                </button>
+
+            </div>
+        </nav>
+
+
+        <!-- =================================================
+             Classification overview
+        ================================================== -->
+        <section
+            id="classification-overview-view"
+            class="domain-view-panel active"
+            aria-labelledby="classification-overview-title"
+        >
+
+            <div class="domain-overview-inner">
+
+                <header class="domain-section-heading">
+
+                    <div>
+                        <p class="figure-label">
+                            Classification overview
+                        </p>
+
+                        <h2 id="classification-overview-title">
+                            Five-level bottom-up classification
+                        </h2>
+                    </div>
+
+
+                    <div class="figure-heading-right">
+
+                        <p class="figure-description">
+                            An integrated overview of the contaminant
+                            and stressor classification.
+                        </p>
+
+                        <p class="figure-instruction">
+                            Hover over sectors for details. Click to explore
+                            a branch, and click its parent to return.
+                        </p>
+
+                    </div>
+
+                </header>
+
+
+                <div class="classification-overview-frame">
+
+                    <iframe
+                        id="classification-overview-iframe"
+                        src="../figures/domains/classification_overview.html"
+                        title="Interactive five-level classification overview of the 18 contaminant and stressor domains"
+                        loading="eager"
+                        scrolling="no"
+                    ></iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             Domain grid
+        ================================================== -->
+        <section
+            id="domain-grid-view"
+            class="domain-view-panel"
+            aria-labelledby="domain-grid-title"
+            hidden
+        >
+
+            <div class="domain-grid-inner">
+
+                <header class="domain-section-heading">
+
+                    <div>
+                        <p class="figure-label">
+                            18 domains
+                        </p>
+
+                        <h2 id="domain-grid-title">
+                            Contaminants and stressors
+                        </h2>
+                    </div>
+
+
+                    <p class="domain-grid-description">
+                        Domains are arranged by aggregated research
+                        frequencies across six decades.
+                    </p>
+
+                </header>
+
+
+                <div class="domain-grid">
+
+                    <!-- 01 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=hocs-pops"
+                        aria-label="Open Halogenated organics and persistent organic pollutants"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/HOCs%20%26%20POPs_s.jpg"
+                                alt="Halogenated organics and persistent organic pollutants"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            HOCs &amp; POPs
+                        </span>
+                    </a>
+
+
+                    <!-- 02 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=inorganics"
+                        aria-label="Open Inorganics and elements"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Inorganics_s.jpg"
+                                alt="Inorganics and elements"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Inorganics
+                        </span>
+                    </a>
+
+
+                    <!-- 03 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=hydrocarbons"
+                        aria-label="Open Hydrocarbons and petroleum"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Hydrocarbons_s.jpg"
+                                alt="Hydrocarbons and petroleum"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Hydrocarbons
+                        </span>
+                    </a>
+
+
+                    <!-- 04 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=atmospheric"
+                        aria-label="Open Atmospheric pollutants and particles"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Atmospheric_s.jpg"
+                                alt="Atmospheric pollutants and particles"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Atmospheric
+                        </span>
+                    </a>
+
+
+                    <!-- 05 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=non-hocs"
+                        aria-label="Open Non-halogenated organic compounds"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Non-HOCs_s.jpg"
+                                alt="Non-halogenated organic compounds"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Non-HOCs
+                        </span>
+                    </a>
+
+
+                    <!-- 06 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=pesticides"
+                        aria-label="Open Pesticides and biocides"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Pesticides_s.jpg"
+                                alt="Pesticides and biocides"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Pesticides
+                        </span>
+                    </a>
+
+
+                    <!-- 07 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=pfas"
+                        aria-label="Open PFAS and organofluorine"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/PFAS_s.jpg"
+                                alt="PFAS and organofluorine"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            PFAS
+                        </span>
+                    </a>
+
+
+                    <!-- 08 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=biological"
+                        aria-label="Open Biological contaminants"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Biological_s.jpg"
+                                alt="Biological contaminants"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Biological
+                        </span>
+                    </a>
+
+
+                    <!-- 09 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=ppcps"
+                        aria-label="Open Pharmaceuticals and personal care products"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/PPCPs_s.jpg"
+                                alt="Pharmaceuticals and personal care products"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            PPCPs
+                        </span>
+                    </a>
+
+
+                    <!-- 10 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=plastics"
+                        aria-label="Open Plastics and polymeric materials"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Plastics_s.jpg"
+                                alt="Plastics and polymeric materials"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Plastics
+                        </span>
+                    </a>
+
+
+                    <!-- 11 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=contextual"
+                        aria-label="Open Contextual environmental terms"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Contextual_s.jpg"
+                                alt="Contextual environmental terms"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Contextual
+                        </span>
+                    </a>
+
+
+                    <!-- 12 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=nanomaterials"
+                        aria-label="Open Engineered nanomaterials"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Nanomaterials_s.jpg"
+                                alt="Engineered nanomaterials"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Nanomaterials
+                        </span>
+                    </a>
+
+
+                    <!-- 13 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=eacs"
+                        aria-label="Open Endocrine-active compounds"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/EACs_s.jpg"
+                                alt="Endocrine-active compounds"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            EACs
+                        </span>
+                    </a>
+
+
+                    <!-- 14 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=nutrients"
+                        aria-label="Open Nutrients and eutrophication"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Nutrients_s.jpg"
+                                alt="Nutrients and eutrophication"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Nutrients
+                        </span>
+                    </a>
+
+
+                    <!-- 15 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=dbps"
+                        aria-label="Open Disinfection byproducts"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/DBPs_s.jpg"
+                                alt="Disinfection byproducts"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            DBPs
+                        </span>
+                    </a>
+
+
+                    <!-- 16 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=radionuclides"
+                        aria-label="Open Radionuclides"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Radionuclides_s.jpg"
+                                alt="Radionuclides"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Radionuclides
+                        </span>
+                    </a>
+
+
+                    <!-- 17 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=surfactants"
+                        aria-label="Open Surfactants and detergents"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Surfactants_s.jpg"
+                                alt="Surfactants and detergents"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Surfactants
+                        </span>
+                    </a>
+
+
+                    <!-- 18 -->
+                    <a
+                        class="domain-card"
+                        href="domain.html?domain=consumer"
+                        aria-label="Open Consumer chemicals"
+                    >
+                        <span class="domain-image-wrapper">
+                            <img
+                                class="domain-image"
+                                src="../assets/domains/Consumer_s.jpg"
+                                alt="Consumer chemicals"
+                                loading="lazy"
+                            >
+                        </span>
+
+                        <span class="domain-card-title">
+                            Consumer
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         Footer
+    ====================================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <p class="footer-title">
+                    Contaminants &amp; Stressors Explorer
+                </p>
+
+                <p class="footer-description">
+                    Interactive exploration of environmental
+                    research evolution from 1967 to 2026.
+                </p>
+            </div>
+
+            <p class="footer-copyright">
+                &copy;
+                <span id="current-year">
+                    2026
+                </span>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+
+    <!-- =====================================================
+         Domains tab switching
+    ====================================================== -->
+    <script>
+        "use strict";
+
+        const domainViewButtons = document.querySelectorAll(
+            ".domain-view-button[data-domain-view]"
+        );
+
+        const domainViewPanels = document.querySelectorAll(
+            ".domain-view-panel"
+        );
+
+        const classificationIframe = document.getElementById(
+            "classification-overview-iframe"
+        );
+
+
+        domainViewButtons.forEach((button) => {
+
+            button.addEventListener("click", () => {
+
+                const targetId = button.dataset.domainView;
+                const targetPanel = document.getElementById(targetId);
+
+                if (!targetPanel) {
+                    return;
+                }
+
+
+                domainViewButtons.forEach((item) => {
+                    item.classList.remove("active");
+
+                    item.setAttribute(
+                        "aria-selected",
+                        "false"
+                    );
+                });
+
+
+                domainViewPanels.forEach((panel) => {
+                    panel.classList.remove("active");
+                    panel.hidden = true;
+                });
+
+
+                button.classList.add("active");
+
+                button.setAttribute(
+                    "aria-selected",
+                    "true"
+                );
+
+
+                targetPanel.hidden = false;
+                targetPanel.classList.add("active");
+
+
+                /*
+                 * Plotly may need a resize event after the
+                 * Classification Overview tab becomes visible.
+                 */
+                if (
+                    targetId === "classification-overview-view"
+                    && classificationIframe
+                ) {
+                    window.setTimeout(() => {
+
+                        if (
+                            classificationIframe.contentWindow
+                        ) {
+                            classificationIframe.contentWindow
+                                .dispatchEvent(
+                                    new Event("resize")
+                                );
+                        }
+
+                    }, 120);
+                }
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
