@@ -1,6 +1,6 @@
 <p align="center">
 
-# 🌍 ContamLens
+# 🔍 ContamLens
 
 ### Environmental Contaminants & Stressors Explorer
 
