@@ -4,7 +4,7 @@
 
 ### Environmental Contaminants & Stressors Explorer
 
-**Explore the evolution of environmental contaminants and stressors across six decades of scientific research (1967–2026).**
+**Explore the evolution of environmental contaminants/stressors across 60 years of research (1967–2026).**
 
 <p>
 
