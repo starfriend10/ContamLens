@@ -1,19 +1,19 @@
 <p align="center">
 
-# 🌍 Contaminants & Stressors Explorer
+# 🌍 ContamLens
 
-### Interactive exploration of six decades of environmental contaminants and stressors (1967–2026)
+### Environmental Contaminants & Stressors Explorer
 
-Discover how environmental contaminants and stressors have evolved over nearly **60 years** through **interactive visualizations**, **expert-informed topic classification**, and **AI-assisted analyses**.
+**Explore the evolution of environmental contaminants and stressors across six decades of scientific research (1967–2026).**
 
 <p>
 
-<a href="https://YOUR_GITHUB_PAGES_URL">
-<img src="https://img.shields.io/badge/🌐_Live_Platform-Visit-success?style=for-the-badge">
+<a href="https://starfriend10.github.io/ContamLens/">
+<img src="https://img.shields.io/badge/🌐_Live_Platform-Visit_ContamLens-2E8B57?style=for-the-badge">
 </a>
 
-<a href="YOUR_DOI">
-<img src="https://img.shields.io/badge/📄_Paper-Coming_Soon-blue?style=for-the-badge">
+<a href="#associated-publication">
+<img src="https://img.shields.io/badge/📄_Associated_Paper-Coming_Soon-4682B4?style=for-the-badge">
 </a>
 
 <a href="#citation">
@@ -22,15 +22,25 @@ Discover how environmental contaminants and stressors have evolved over nearly *
 
 </p>
 
+*An interactive companion platform for exploring long-term environmental research trends through expert-informed topic classification and interactive visualization.*
+
 </p>
 
 ---
 
-# 📸 Platform Preview
+<p align="center">
+
+<a href="https://starfriend10.github.io/ContamLens/">
+
+<img src="assets/backgrounds/homepage_snapshot.jpg" width="95%" alt="ContamLens Homepage">
+
+</a>
+
+</p>
 
 <p align="center">
 
-<img src="docs/images/homepage.png" width="90%">
+**👆 Click the image above to launch the interactive platform**
 
 </p>
 
@@ -38,111 +48,153 @@ Discover how environmental contaminants and stressors have evolved over nearly *
 
 # 🚀 At a Glance
 
+<div align="center">
+
 | Study Period | Publications | Topics | Domains | Panels |
-|:------------:|:------------:|:------:|:-------:|:------:|
+|:-------------:|:------------:|:------:|:-------:|:------:|
 | **1967–2026** | **34,000+** | **566** | **18** | **4** |
+
+</div>
+
+---
+
+# 🌟 Why ContamLens?
+
+Unlike traditional bibliometric tools, **ContamLens** was designed specifically for environmental contaminants and stressors. It combines domain-informed text mining with expert knowledge to reveal long-term evolution, emerging concerns, and research patterns through an intuitive interactive interface.
+
+| Traditional bibliometric analysis | ContamLens |
+|----------------------------------|------------|
+| Publication statistics | Environmental intelligence |
+| Keyword co-occurrence | Expert-informed contaminant domains |
+| Static figures | Interactive exploration |
+| General trend analysis | Six decades of topic evolution |
+| Separate analyses | Integrated environmental platform |
 
 ---
 
 # 🔍 Explore the Platform
 
-| Page | Description |
-|------|-------------|
-| 📈 **Trending** | Identify emerging, declining, and legacy contaminants and stressors through temporal comparisons. |
-| 🌊 **Patterns** | Discover continuous, V-shaped, wave-shaped, and other long-term temporal patterns. |
-| 🌍 **Domains** | Browse 18 environmental contaminant and stressor domains. |
-| 🧩 **Panels** | Compare related domains through integrated thematic panels. |
-| 📚 **Documentation** | Learn the methodology behind trend analyses, topic classification, and frequency metrics. |
+| Section | Description |
+|----------|-------------|
+| 📈 **Trending** | Identify emerging, increasing, declining, and legacy contaminants through temporal comparisons. |
+| 🌊 **Patterns** | Explore continuous, V-shaped, Λ-shaped, wave-shaped, and other temporal trajectories. |
+| 🌍 **Domains** | Browse 18 expert-informed contaminant and stressor domains. |
+| 🧩 **Panels** | Compare related environmental domains through four integrated thematic panels. |
+| 📊 **Temporal Dynamics** | Track long-term changes in domain-level research activity. |
+| 🔄 **Classification Evolution** | Visualize how environmental research composition changes over time. |
+| 📚 **Documentation** | Learn the analytical framework, temporal comparisons, and frequency metrics behind the platform. |
 
 ---
 
-# ✨ Highlights
+# ✨ Platform Highlights
 
-- 📚 Built from **34,000+** high-quality environmental publications
-- 🏷️ Covers **566** keyword-level contaminant and stressor topics
-- 🌍 Organized into **18** expert-curated environmental domains
-- 📊 Interactive Plotly visualizations throughout the platform
-- 📈 Five complementary temporal comparison analyses
-- 🔄 Five-year rolling-window domain evolution
-- 🤖 AI-assisted topic mining with expert-guided environmental interpretation
-- 💻 Fully responsive static website
-
----
-
-# 🖼️ Gallery
-
-| Homepage | Trending |
-|----------|----------|
-| <img src="docs/images/homepage.png" width="100%"> | <img src="docs/images/trending.png" width="100%"> |
-
-| Patterns | Domains |
-|----------|----------|
-| <img src="docs/images/patterns.png" width="100%"> | <img src="docs/images/domains.png" width="100%"> |
+- 🌍 **34,000+** environmental publications
+- 🏷️ **566** contaminant and stressor topics
+- 🧪 **18** expert-informed environmental domains
+- 📊 Four integrated thematic panels
+- 📈 Consecutive 15-year temporal comparisons
+- 🔄 Five-year rolling-window analyses
+- 🤖 AI-assisted topic discovery with expert environmental interpretation
+- 💻 Interactive Plotly visualizations
+- 📱 Responsive website optimized for desktop and mobile devices
 
 ---
 
-# 📂 Repository
+# 🔬 Analytical Framework
 
 ```text
-.
-├── index.html
-├── css/
-├── js/
-├── pages/
-├── assets/
-│   ├── backgrounds/
-│   └── domains/
-├── data/
-│   └── html/
-└── README.md
+34,000+ Environmental Publications
+                 │
+                 ▼
+     Topic Identification & Screening
+                 │
+                 ▼
+ 566 Contaminant & Stressor Topics
+                 │
+                 ▼
+18 Expert-informed Environmental Domains
+                 │
+                 ▼
+      Four Integrated Panels
+                 │
+                 ▼
+ Interactive Trend & Pattern Exploration
 ```
 
 ---
 
-# 🌐 Run Locally
+# 🌐 Visit ContamLens
+
+### Live Platform
+
+**https://starfriend10.github.io/ContamLens/**
+
+---
+
+### Local Preview
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/starfriend10/ContamLens.git
 ```
 
 Open
 
-```
+```text
 index.html
 ```
 
-in your web browser.
+directly in your web browser.
 
-No installation or server is required.
+Alternatively, launch a simple local server:
 
----
+```bash
+python -m http.server
+```
 
-# 📖 Associated Publication
+and visit
 
-**Title**
-
-*(To be updated after publication.)*
-
----
-
-# 📑 Citation
-
-Citation information will be added after publication.
-
-```bibtex
-Coming soon...
+```text
+http://localhost:8000
 ```
 
 ---
 
-# 📄 License
+# 📄 Associated Publication
 
-This project is released under the **MIT License**.
+The accompanying manuscript describing the methodology, expert-guided classification framework, and scientific findings will be added after publication.
+
+---
+
+# 📖 Citation
+
+Citation information will be available following publication.
+
+```bibtex
+@article{ContamLens,
+  title   = {To be updated},
+  author  = {To be updated},
+  journal = {To be updated},
+  year    = {2026},
+  doi     = {To be updated}
+}
+```
+
+---
+
+# 📜 License
+
+This project is distributed under the terms of the **MIT License**.
 
 ---
 
 <p align="center">
 
-Developed for exploring the long-term evolution of environmental contaminants and stressors through domain-informed text mining, expert knowledge, and interactive visualization.
+### ContamLens
+
+**Seeing six decades of environmental research through topics, domains, and time.**
+
+🌐 https://starfriend10.github.io/ContamLens/
 
 </p>
