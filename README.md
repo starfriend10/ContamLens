@@ -48,7 +48,7 @@
 
 # 🚀 At a Glance
 
-<div align="center">
+<div align="left">
 
 | Study Period | Publications | Topics | Domains | Panels |
 |:-------------:|:------------:|:------:|:-------:|:------:|
