@@ -1,56 +1,84 @@
+<p align="center">
+
 # Contaminants & Stressors Explorer
 
-**An interactive platform for exploring the long-term evolution of environmental contaminants and stressors (1967–2026).**
+### Interactive exploration of six decades of environmental contaminants and stressors (1967–2026)
+
+<p>
+Explore <b>34,000+</b> environmental publications through interactive visualizations,
+expert-informed topic classification, and AI-assisted analyses.
+</p>
+
+<p>
+
+<a href="https://YOUR_GITHUB_PAGES_URL"><strong>🌐 Live Platform</strong></a> •
+<a href="YOUR_DOI"><strong>📄 Paper</strong></a> •
+<a href="#citation"><strong>📖 Citation</strong></a>
+
+</p>
+
+</p>
 
 ---
 
-## Overview
+## Platform Overview
 
-The **Contaminants & Stressors Explorer** is an interactive web platform that accompanies our research on the long-term evolution of contaminant- and stressor-related environmental research.
+> An interactive knowledge platform that reveals how environmental contaminants and stressors have evolved over nearly **60 years**, integrating domain-informed text mining, expert knowledge, and interactive visual analytics.
 
-Built upon more than **34,000 high-quality environmental publications** spanning **1967–2026**, the platform integrates domain-informed text mining, expert-driven classification, and interactive visualizations to reveal how environmental concerns have evolved over nearly six decades.
+<p align="center">
 
-The platform enables users to explore:
+**📅 1967–2026** &nbsp;&nbsp;&nbsp;
+**📚 34,000+ Publications** &nbsp;&nbsp;&nbsp;
+**🏷️ 566 Topics** &nbsp;&nbsp;&nbsp;
+**🌍 18 Domains** &nbsp;&nbsp;&nbsp;
+**📊 4 Integrated Panels**
 
-- Temporal evolution of environmental research topics
-- Emerging and declining contaminants and stressors
-- Long-term research patterns
-- Domain-level evolution through rolling-window analyses
-- Topic classification across major environmental domains
-- Interactive visualizations for trend exploration
-
-Unlike conventional bibliometric tools, the platform emphasizes **environmental interpretation** by combining data-driven analyses with expert knowledge.
+</p>
 
 ---
 
-## Website
+# Preview
 
-The online platform is available at:
+<p align="center">
 
-**https://YOUR_USERNAME.github.io/YOUR_REPOSITORY/**
+*(Homepage screenshot)*
 
----
-
-## Features
-
-- Interactive temporal trend exploration
-- Four complementary temporal comparison periods
-- 566 keyword-level environmental topics
-- 18 contaminant and stressor domains
-- Four integrated environmental panels
-- Five-year rolling-window domain analyses
-- Pattern discovery including continuous, emerging, legacy, V-shaped, and wave-shaped trends
-- Interactive Plotly visualizations
-- Responsive web interface
+</p>
 
 ---
 
-## Repository Structure
+# Explore
+
+| | |
+|---|---|
+| 📈 **Trending** | Discover emerging, legacy, and rapidly changing contaminants and stressors. |
+| 🌊 **Patterns** | Explore continuous, V-shaped, wave-shaped, and other long-term temporal patterns. |
+| 🌍 **Domains** | Browse 18 environmental contaminant and stressor domains. |
+| 🧩 **Panels** | Compare related environmental domains through integrated thematic panels. |
+| 📚 **Documentation** | Learn the methodology behind temporal analyses, topic classification, and frequency metrics. |
+
+---
+
+# Platform Highlights
+
+✅ Interactive Plotly visualizations
+
+✅ AI-assisted topic discovery
+
+✅ Expert-guided environmental classification
+
+✅ Five temporal comparison analyses
+
+✅ Domain-level rolling-window analyses
+
+✅ Responsive website
+
+---
+
+# Repository
 
 ```text
-Contaminants-Stressors-Explorer/
-│
-├── index.html
+.
 ├── css/
 ├── js/
 ├── pages/
@@ -59,59 +87,53 @@ Contaminants-Stressors-Explorer/
 │   └── domains/
 ├── data/
 │   └── html/
-└── README.md
+└── index.html
 ```
 
 ---
 
-## Local Deployment
+# Running Locally
 
-Clone the repository:
+Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/USERNAME/REPOSITORY.git
 ```
 
-Open `index.html` in your preferred web browser.
+Open
 
-No installation or server configuration is required.
+```
+index.html
+```
 
----
+in your browser.
 
-## Associated Publication
-
-This platform accompanies the following study:
-
-**Title:** *To be updated after publication.*
-
-**Journal:** *To be updated.*
-
-**DOI:** *To be updated.*
+No installation or server is required.
 
 ---
 
-## Citation
+# Associated Publication
 
-If you use this platform in your research, please cite the associated publication.
+**Title**
 
-Citation information will be updated after publication.
-
----
-
-## License
-
-This project is released under the **MIT License**.
+To be updated after publication.
 
 ---
 
-## Contact
+# Citation
 
-For questions, suggestions, or collaboration opportunities, please open an Issue or contact the project authors.
+Citation information will be added after publication.
 
 ---
 
-## Acknowledgements
+# License
 
-Developed to support long-term analyses of environmental contaminants and stressors through domain-informed text mining, expert knowledge, and interactive visualization.
+MIT License
 
-© 2026. All rights reserved by the authors.
+---
+
+<p align="center">
+
+Developed for exploring the long-term evolution of environmental contaminants and stressors.
+
+</p>
