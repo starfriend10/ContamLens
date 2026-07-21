@@ -2009,3 +2009,109 @@
 .classification-evolution-loading[hidden] {
     display: none;
 }
+
+
+
+
+
+
+
+
+/* ==========================================================
+   Trending page: reading guide and trend-factor legend
+========================================================== */
+
+.trending-guide-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.trending-guide-text {
+    min-width: 0;
+}
+
+.trending-guide-text p {
+    margin: 0;
+}
+
+.trend-factor-legend {
+    width: 240px;
+    justify-self: end;
+    transform: translateX(-100px);
+}
+
+.trend-factor-legend img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Responsive layout */
+@media (max-width: 800px) {
+
+    .trending-guide-inner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .trend-factor-legend {
+        width: min(100%, 420px);
+        justify-self: center;
+    }
+}
+
+
+
+
+
+
+
+/* ==========================================================
+   Patterns page: reading guide and normalized-frequency legend
+========================================================== */
+
+.patterns-guide-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.patterns-guide-text {
+    min-width: 0;
+}
+
+.patterns-guide-text p {
+    margin: 0;
+}
+
+.pattern-legend {
+    width: 300px;          /* adjust as needed */
+    justify-self: end;
+    transform: translateX(-50px);
+}
+
+.pattern-legend img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Responsive */
+@media (max-width: 800px) {
+
+    .patterns-guide-inner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pattern-legend {
+        width: min(100%, 420px);
+        justify-self: center;
+    }
+
+}
