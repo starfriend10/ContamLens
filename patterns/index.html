@@ -232,7 +232,7 @@
                 <div
                     id="analysis-figure-frame"
                     class="interactive-figure-frame"
-                    style="height: 1300px;"
+                    style="height: 1100px;"
                 >
                     <iframe
                         id="analysis-figure"
@@ -240,7 +240,7 @@
                         title="Top 1–50 temporal pattern heatmap"
                         loading="eager"
                         scrolling="no"
-                        style="height: 1300px;"
+                        style="height: 1100px;"
                     ></iframe>
                 </div>
 
@@ -249,19 +249,26 @@
 
 
         <!-- =================================================
-             Reading guide
+            Reading guide
         ================================================== -->
-        <section class="reading-guide">
-            <div class="analysis-inner reading-guide-inner">
+        <section class="reading-guide patterns-reading-guide">
+            <div class="analysis-inner reading-guide-inner patterns-guide-inner">
 
-                <p>
-                    Heatmap colors represent the relative topic intensity
-                    observed across time.
-                </p>
+                <div class="patterns-guide-text">
+                    <p>
+                        Heatmap colors represent the relative topic intensity observed
+                        across time.<br>
+                        Topics are ordered by overall prevalence within the selected
+                        temporal-pattern category.
+                    </p>
+                </div>
 
-                <p>
-                    Topics are ordered by overall prevalence within the selected temporal-pattern category.
-                </p>
+                <figure class="pattern-legend">
+                    <img
+                        src="../figures/Normalized%20frequency.png"
+                        alt="Normalized frequency legend"
+                    >
+                </figure>
 
             </div>
         </section>
