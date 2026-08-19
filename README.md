@@ -103,7 +103,7 @@ Unlike traditional bibliometric tools, **ContamLens** was designed specifically 
 # 🔬 Analytical Framework
 
 ```text
-47,000+ ES&T Publications
+    47,000+ ES&T Publications
                  │
                  ▼
 34,000+ Contaminant Relevant Publications
