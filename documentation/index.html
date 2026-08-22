@@ -15,6 +15,506 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/analysis.css">
     <link rel="stylesheet" href="../css/documentation.css">
+
+    <style>
+        /* =====================================================
+           Authors & Resources: final two rows
+           Scoped layout additions only; existing card styling
+           remains controlled by documentation.css.
+        ====================================================== */
+
+        /* Row 2: four equal cards */
+        .documentation-resources .documentation-resource-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        /* Row 3: six related publications in a 3 × 2 grid */
+        .documentation-resources .documentation-publication-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .documentation-resources .documentation-publication-grid
+        .documentation-resource-card {
+            min-width: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .documentation-resources .documentation-publication-grid
+        .documentation-links {
+            margin-top: auto;
+        }
+
+        .documentation-resources .documentation-publications-section {
+            margin-top: 28px;
+        }
+
+        .documentation-resources .documentation-publications-heading {
+            margin-bottom: 14px;
+        }
+
+        /* Keep the citation card compact inside the four-card row */
+        .documentation-resources .documentation-resource-grid
+        .documentation-citation-header {
+            align-items: flex-start;
+        }
+
+        .documentation-resources .documentation-resource-grid
+        .documentation-citation-text {
+            margin-bottom: 0;
+        }
+
+        /* Responsive behavior */
+        @media (max-width: 1100px) {
+            .documentation-resources .documentation-resource-grid,
+            .documentation-resources .documentation-publication-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 700px) {
+            .documentation-resources .documentation-resource-grid,
+            .documentation-resources .documentation-publication-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+
+    <style>
+        /* Final Authors & Resources adjustments */
+        .documentation-resources .documentation-resource-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .documentation-resources .documentation-citation-card {
+            width: 100%;
+        }
+
+        .documentation-resources .documentation-citation-header h3 {
+            white-space: nowrap;
+        }
+
+        .documentation-resources .documentation-citation-text {
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+    </style>
+
+
+    <style>
+        .documentation-resources .documentation-publication-authors {
+            margin-top: 8px;
+            margin-bottom: 6px;
+            font-size: 0.9em;
+            color: var(--text-secondary, #56636f);
+        }
+
+        .documentation-resources .documentation-publication-doi {
+            margin-top: 4px;
+            margin-bottom: 12px;
+            font-size: 0.86em;
+            color: var(--text-secondary, #56636f);
+        }
+    </style>
+
+
+    <style>
+        .documentation-resources .documentation-publication-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: -4px;
+            margin-bottom: 12px;
+        }
+
+        .documentation-resources .documentation-publication-metrics span {
+            display: inline-flex;
+            align-items: center;
+            width: fit-content;
+            padding: 4px 8px;
+            border-radius: 999px;
+            background: rgba(41, 128, 185, 0.08);
+            font-size: 0.78em;
+            font-weight: 600;
+            line-height: 1;
+        }
+    </style>
+
+
+    <style>
+        /* Compact publication cards */
+        .documentation-resources .documentation-publication-grid
+        .documentation-resource-card {
+            padding: 16px 18px;
+        }
+
+        .documentation-resources .documentation-publication-grid
+        .documentation-resource-card h3 {
+            margin-bottom: 8px;
+            line-height: 1.28;
+        }
+
+        .documentation-resources .documentation-publication-authors {
+            margin-top: 4px;
+            margin-bottom: 4px;
+            line-height: 1.35;
+        }
+
+        .documentation-resources .documentation-publication-grid
+        .documentation-resource-card > p:not(.documentation-publication-authors) {
+            margin-top: 2px;
+            margin-bottom: 8px;
+            line-height: 1.35;
+        }
+
+        .documentation-resources .documentation-publication-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: auto;
+            padding-top: 8px;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-links,
+        .documentation-resources .documentation-publication-footer
+        .documentation-publication-metrics {
+            margin: 0;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-publication-metrics {
+            margin-left: auto;
+        }
+
+        .documentation-resources .documentation-publication-metrics span {
+            white-space: nowrap;
+        }
+    </style>
+
+
+    <style>
+        /* Slightly smaller Relevant publications heading */
+        .documentation-resources .documentation-publications-heading h3 {
+            font-size: 1rem;
+        }
+    </style>
+
+
+    <style>
+        /* Comparison version: six publication cards in one row */
+        .documentation-resources .documentation-publication-grid {
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .documentation-resources .documentation-publication-grid
+        .documentation-resource-card {
+            padding: 12px 10px;
+        }
+
+        .documentation-resources .documentation-publication-grid
+        .documentation-resource-card h3 {
+            font-size: 0.78rem;
+            line-height: 1.22;
+            margin-bottom: 6px;
+        }
+
+        .documentation-resources .documentation-publication-authors {
+            font-size: 0.68rem;
+            line-height: 1.25;
+            margin-top: 2px;
+            margin-bottom: 3px;
+        }
+
+        .documentation-resources .documentation-publication-grid
+        .documentation-resource-card > p:not(.documentation-publication-authors) {
+            font-size: 0.66rem;
+            line-height: 1.25;
+            margin-top: 2px;
+            margin-bottom: 6px;
+        }
+
+        .documentation-resources .documentation-publication-footer {
+            gap: 6px;
+            padding-top: 6px;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-links a,
+        .documentation-resources .documentation-publication-footer
+        .documentation-links span {
+            font-size: 0.66rem;
+        }
+
+        .documentation-resources .documentation-publication-metrics span {
+            font-size: 0.64rem;
+            padding: 3px 6px;
+        }
+
+        /* Responsive fallback */
+        @media (max-width: 1250px) {
+            .documentation-resources .documentation-publication-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 800px) {
+            .documentation-resources .documentation-publication-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 560px) {
+            .documentation-resources .documentation-publication-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+
+    <style>
+        /* Refine section heading to match the page's established label + title hierarchy */
+        .documentation-resources .documentation-publications-heading {
+            margin-bottom: 12px;
+        }
+
+        .documentation-resources .documentation-publications-heading h3 {
+            font-size: 0.86rem;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 0.01em;
+            margin: 0;
+        }
+
+        /* Smaller status text for unpublished/forthcoming items */
+        .documentation-resources .documentation-publication-grid
+        .documentation-links > span {
+            font-size: 0.58rem;
+            line-height: 1.2;
+        }
+    </style>
+
+
+    <style>
+        /* Match the established small section-label treatment */
+        .documentation-resources .documentation-publications-heading {
+            margin-bottom: 10px;
+        }
+
+        .documentation-resources .documentation-publications-heading
+        .documentation-card-label {
+            margin: 0;
+        }
+
+        /* Keep access buttons and citation badges aligned on the same baseline */
+        .documentation-resources .documentation-publication-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 6px;
+            margin-top: auto;
+            padding-top: 6px;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-links,
+        .documentation-resources .documentation-publication-footer
+        .documentation-publication-metrics {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-links a,
+        .documentation-resources .documentation-publication-metrics span {
+            min-height: 24px;
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* Slightly larger forthcoming/status text */
+        .documentation-resources .documentation-publication-grid
+        .documentation-links > span {
+            font-size: 0.64rem;
+            line-height: 1.2;
+        }
+    </style>
+
+
+    <style>
+        /* Final alignment refinements for publication cards */
+        .documentation-resources .documentation-publication-footer {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: end;
+            column-gap: 8px;
+            margin-top: auto;
+            padding-top: 8px;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-links {
+            grid-column: 1;
+            margin: 0;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-publication-metrics {
+            grid-column: 3;
+            margin: 0;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .documentation-resources .documentation-publication-footer
+        .documentation-links a,
+        .documentation-resources .documentation-publication-metrics span {
+            height: 24px;
+            min-height: 24px;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: inline-flex;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        /* Slightly larger status text for forthcoming / pending items */
+        .documentation-resources .documentation-publication-grid
+        .documentation-links > span {
+            font-size: 0.72rem;
+            line-height: 1.25;
+        }
+    </style>
+
+
+    <style>
+        /* ContamLens header logo */
+        .site-brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .site-brand-logo {
+            display: block;
+            width: 46px;
+            height: 46px;
+            object-fit: contain;
+            flex: 0 0 46px;
+        }
+
+        .site-brand-text {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        @media (max-width: 700px) {
+            .site-brand-logo {
+                width: 40px;
+                height: 40px;
+                flex-basis: 40px;
+            }
+
+            .site-brand {
+                gap: 8px;
+            }
+        }
+    </style>
+
+
+    <style>
+        /* Header brand alignment fix */
+        .analysis-header .site-brand {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
+            gap: 10px !important;
+            width: auto !important;
+        }
+
+        .analysis-header .site-brand-logo {
+            display: block !important;
+            width: 42px !important;
+            height: 42px !important;
+            flex: 0 0 42px !important;
+            margin: 0 !important;
+            object-fit: contain !important;
+        }
+
+        .analysis-header .site-brand-text {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            justify-content: center !important;
+            gap: 1px;
+            min-width: 0;
+        }
+
+        .analysis-header .site-brand-title,
+        .analysis-header .site-brand-subtitle {
+            display: block !important;
+            margin: 0 !important;
+            text-align: left !important;
+            line-height: 1.1;
+        }
+
+        .analysis-header .site-brand-title {
+            white-space: nowrap;
+        }
+
+        .analysis-header .site-brand-subtitle {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 700px) {
+            .analysis-header .site-brand-logo {
+                width: 36px !important;
+                height: 36px !important;
+                flex-basis: 36px !important;
+            }
+
+            .analysis-header .site-brand {
+                gap: 8px !important;
+            }
+        }
+    </style>
+
+
+    <style>
+    </style>
+
+
+    <style>
+        /* Match header brand/navigation to the same horizontal content width
+           used by Documentation, Methodology, and other page sections. */
+        .analysis-header .header-inner.analysis-inner {
+            box-sizing: border-box;
+        }
+    </style>
+
+
+    <style>
+        /* Exact horizontal alignment with the page's analysis-inner content.
+           header-inner adds its own side padding, so remove that extra inset
+           while retaining analysis-inner's responsive width/max-width. */
+        .analysis-header .header-inner.analysis-inner {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    </style>
+
 </head>
 
 <body class="analysis-page documentation-page">
@@ -23,15 +523,23 @@
          Site header
     ====================================================== -->
     <header class="analysis-header">
-        <div class="header-inner">
+        <div class="header-inner analysis-inner">
 
             <a class="site-brand" href="../">
-                <span class="site-brand-title">
-                    ContamLens
-                </span>
+                <img
+                    class="site-brand-logo"
+                    src="../assets/logo/Logo.jpg"
+                    alt="ContamLens logo"
+                >
 
-                <span class="site-brand-subtitle">
-                    Contaminants &amp; Stressors Explorer
+                <span class="site-brand-text">
+                    <span class="site-brand-title">
+                        ContamLens
+                    </span>
+
+                    <span class="site-brand-subtitle">
+                        Contaminants &amp; Stressors Explorer
+                    </span>
                 </span>
             </a>
 
@@ -1221,107 +1729,188 @@
 
                 <div class="documentation-resource-grid">
 
-                    <article class="documentation-resource-card">
-                        <p class="documentation-card-label">
-                            Publication
-                        </p>
+                    <article class="documentation-resource-card documentation-citation-card">
+                        <div class="documentation-citation-header">
+                            <div>
+                                <h3>
+                                    Suggested citation
+                                </h3>
+                            </div>
 
-                        <h3>
-                            Associated paper
-                        </h3>
-
-                        <p>
-                            Add the final article title, journal citation, DOI,
-                            and publication link.
-                        </p>
-
-                        <div class="documentation-links">
-                            <a href="#">
-                                Read paper
-                            </a>
+                            <button
+                                id="copy-citation"
+                                class="documentation-copy-button"
+                                type="button"
+                            >
+                                Copy citation
+                            </button>
                         </div>
-                    </article>
 
-
-                    <article class="documentation-resource-card">
-                        <p class="documentation-card-label">
-                            Data and code
+                        <p
+                            id="citation-text"
+                            class="documentation-citation-text"
+                        >
+                            Author(s). Paper title. Environmental Science &amp; Technology, 2026. DOI: add DOI here.
                         </p>
-
-                        <h3>
-                            Project resources
-                        </h3>
-
-                        <p>
-                            Add links to archived datasets, keyword tables,
-                            code, and reusable visualization components.
-                        </p>
-
-                        <div class="documentation-links">
-                            <a href="#">
-                                GitHub
-                            </a>
-
-                            <a href="#">
-                                Dataset
-                            </a>
-                        </div>
-                    </article>
-
-
-                    <article class="documentation-resource-card">
-                        <p class="documentation-card-label">
-                            Platform information
-                        </p>
-
-                        <h3>
-                            Version and contact
-                        </h3>
-
-                        <p>
-                            Add the current platform version, last updated date,
-                            license, acknowledgements, and contact details.
-                        </p>
-
-                        <div class="documentation-links">
-                            <a href="#">
-                                Contact
-                            </a>
-                        </div>
                     </article>
 
                 </div>
 
 
-                <article class="documentation-citation">
-                    <div class="documentation-citation-header">
-                        <div>
-                            <p class="documentation-card-label">
-                                Citation
-                            </p>
+                <div class="documentation-publications-section">
 
-                            <h3>
-                                Suggested citation
-                            </h3>
-                        </div>
-
-                        <button
-                            id="copy-citation"
-                            class="documentation-copy-button"
-                            type="button"
-                        >
-                            Copy citation
-                        </button>
+                    <div class="documentation-publications-heading">
+                        <p class="documentation-card-label">
+                            Relevant publications
+                        </p>
                     </div>
 
-                    <p
-                        id="citation-text"
-                        class="documentation-citation-text"
-                    >
-                        Author(s). Paper title. Environmental Science &amp;
-                        Technology, 2026. DOI: add DOI here.
-                    </p>
-                </article>
+                    <div class="documentation-publication-grid">
+
+                        <article class="documentation-resource-card">
+                            <h3>
+                                ES&amp;T in the 21st Century: A Data-Driven Analysis of Research Topics, Interconnections, and Trends in the Past 20 Years
+                            </h3>
+
+                            <p class="documentation-publication-authors">
+                                Zhu, J.-J., Dressel, W., Pacion, K., &amp; Ren, Z. J.
+                            </p>
+
+                            <p>
+                                <em>Environmental Science &amp; Technology</em> · <strong>2021</strong> · 55(6), 3453–3464
+                            </p>
+                            <div class="documentation-publication-footer">
+                                <div class="documentation-links">
+                                <a href="https://doi.org/10.1021/acs.est.0c07551" target="_blank" rel="noopener noreferrer">
+                                    Access article
+                                </a>
+                            </div>
+                                <div class="documentation-publication-metrics">
+                                    <span>136 citations</span>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="documentation-resource-card">
+                            <h3>
+                                The Evolution of Research in Resources, Conservation &amp; Recycling Revealed by Word2vec-Enhanced Data Mining
+                            </h3>
+
+                            <p class="documentation-publication-authors">
+                                Zhu, J.-J., &amp; Ren, Z. J.
+                            </p>
+
+                            <p>
+                                <em>Resources, Conservation and Recycling</em> · <strong>2023</strong> · 190, 106876
+                            </p>
+                            <div class="documentation-publication-footer">
+                                <div class="documentation-links">
+                                <a href="https://doi.org/10.1016/j.resconrec.2023.106876" target="_blank" rel="noopener noreferrer">
+                                    Access article
+                                </a>
+                            </div>
+                                <div class="documentation-publication-metrics">
+                                    <span>37 citations</span>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="documentation-resource-card">
+                            <h3>
+                                ChatGPT and Environmental Research
+                            </h3>
+
+                            <p class="documentation-publication-authors">
+                                Zhu, J.-J., Jiang, J., Yang, M., &amp; Ren, Z. J.
+                            </p>
+
+                            <p>
+                                <em>Environmental Science &amp; Technology</em> · <strong>2023</strong> · 57(46), 17667
+                            </p>
+                            <div class="documentation-publication-footer">
+                                <div class="documentation-links">
+                                <a href="https://doi.org/10.1021/acs.est.3c01818" target="_blank" rel="noopener noreferrer">
+                                    Access article
+                                </a>
+                            </div>
+                                <div class="documentation-publication-metrics">
+                                    <span>324 citations</span>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="documentation-resource-card">
+                            <h3>
+                                Enabling GPTs for Expert-Level Environmental Engineering Question Answering
+                            </h3>
+
+                            <p class="documentation-publication-authors">
+                                Zhu, J.-J., Yang, M., Jiang, J., Bai, Y., Chen, D., &amp; Ren, Z. J.
+                            </p>
+
+                            <p>
+                                <em>Environmental Science &amp; Technology Letters</em> · <strong>2024</strong> · 11(12), 1327–1333
+                            </p>
+                            <div class="documentation-publication-footer">
+                                <div class="documentation-links">
+                                <a href="https://doi.org/10.1021/acs.estlett.4c00665" target="_blank" rel="noopener noreferrer">
+                                    Access article
+                                </a>
+                            </div>
+                                <div class="documentation-publication-metrics">
+                                    <span>26 citations</span>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="documentation-resource-card">
+                            <h3>
+                                Knowledge-Infused Language Models for the Water and Sustainability Domain
+                            </h3>
+
+                            <p class="documentation-publication-authors">
+                                Zhu, J.-J., Jiang, J., Yang, M., Du, L., Song, C., Ilavelan, V., &amp; Ren, Z. J.
+                            </p>
+
+                            <p>
+                                Journal to be updated · <strong>2026–2027</strong>
+                            </p>
+
+                            <div class="documentation-links">
+                                <span>
+                                    Publication information forthcoming
+                                </span>
+                            </div>
+                        </article>
+
+
+                        <article class="documentation-resource-card">
+                            <h3>
+                                Putting Large Language Models into Environmental Context
+                            </h3>
+
+                            <p class="documentation-publication-authors">
+                                Jiang, J., Zhu, J.-J., &amp; Ren, Z. J.
+                            </p>
+
+                            <p>
+                                <em>Environmental Science &amp; Technology</em> · <strong>2026</strong>
+                            </p>
+
+                            <div class="documentation-links">
+                                <span>
+                                    Link to be updated
+                                </span>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </div>
 
             </div>
         </section>

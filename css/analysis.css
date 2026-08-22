@@ -44,6 +44,15 @@
     margin-left: auto;
 }
 
+/* =========================================================
+   Header/content alignment
+========================================================= */
+
+.analysis-page .header-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 /* =========================================================
    Analysis intro
@@ -173,7 +182,7 @@ button.context-link {
 ========================================================= */
 
 .figure-viewer-section {
-    padding: 25px 0 5px;
+    padding: 42px 0 52px;
 }
 
 .figure-viewer-inner {
@@ -240,7 +249,7 @@ button.context-link {
     position: relative;
 
     width: 100%;
-    min-height: 1350px;
+    min-height: 1300px;
 
     overflow: hidden;
     background: var(--white);
@@ -256,7 +265,7 @@ button.context-link {
     display: block;
 
     width: 100%;
-    height: 1350px;
+    height: 1300px;
 
     border: 0;
     background: var(--white);
@@ -391,5 +400,61 @@ button.context-link {
     .reading-guide-inner {
         grid-template-columns: 1fr;
         gap: 14px;
+    }
+}
+
+
+/* =========================================================
+   ContamLens logo header — analysis pages only
+   Keeps the root Home page and its shared header untouched.
+========================================================= */
+
+.analysis-page .header-inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.analysis-page .site-brand {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.05;
+}
+
+.analysis-page .site-brand-logo {
+    display: block;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    margin: 0;
+    object-fit: contain;
+}
+
+.analysis-page .site-brand-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 0;
+}
+
+.analysis-page .site-brand-title,
+.analysis-page .site-brand-subtitle {
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    .analysis-page .site-brand {
+        gap: 8px;
+    }
+
+    .analysis-page .site-brand-logo {
+        width: 36px;
+        height: 36px;
+        flex-basis: 36px;
     }
 }
