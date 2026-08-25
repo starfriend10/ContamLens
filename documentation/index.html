@@ -515,6 +515,75 @@
         }
     </style>
 
+    <style>
+        /* Other Research Interactive Websites */
+        .documentation-resources .documentation-websites-section {
+            margin-top: 28px;
+        }
+
+        .documentation-resources .documentation-websites-heading {
+            margin-bottom: 10px;
+        }
+
+        .documentation-resources .documentation-websites-heading
+        .documentation-card-label {
+            margin: 0;
+        }
+
+        .documentation-resources .documentation-website-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 190px);
+            gap: 14px;
+            justify-content: start;
+        }
+
+        .documentation-resources .documentation-website-card {
+            min-width: 0;
+            min-height: 196px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 14px 12px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .documentation-resources .documentation-website-logo {
+            width: 132px;
+            height: 132px;
+            object-fit: contain;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .documentation-resources .documentation-website-name {
+            margin: 0;
+            font-size: 0.92rem;
+            font-weight: 650;
+            line-height: 1.25;
+        }
+
+        .documentation-resources .documentation-website-card:hover,
+        .documentation-resources .documentation-website-card:focus-visible {
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 1000px) {
+            .documentation-resources .documentation-website-grid {
+                grid-template-columns: repeat(2, 190px);
+            }
+        }
+
+        @media (max-width: 560px) {
+            .documentation-resources .documentation-website-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
 </head>
 
 <body class="analysis-page documentation-page">
@@ -1911,6 +1980,67 @@
                     </div>
 
                 </div>
+
+                <div class="documentation-websites-section">
+
+                    <div class="documentation-websites-heading">
+                        <p class="documentation-card-label">
+                            Other Research Interactive Websites
+                        </p>
+                    </div>
+
+                    <div class="documentation-website-grid">
+
+                        <a class="documentation-resource-card documentation-website-card" href="https://starfriend10.github.io/EST/" target="_blank" rel="noopener noreferrer" aria-label="ES&amp;T 20 Years website">
+                            <img
+                                class="documentation-website-logo"
+                                src="../assets/logo/logo_est20yr.jpg"
+                                alt="ES&amp;T 20 Years logo"
+                            >
+                            <p class="documentation-website-name">
+                                ES&amp;T 20 Years
+                            </p>
+                        </a>
+
+                        <a class="documentation-resource-card documentation-website-card" href="https://starfriend10.github.io/WaterScope-AI/" target="_blank" rel="noopener noreferrer" aria-label="WaterScope-AI website">
+                            <img
+                                class="documentation-website-logo"
+                                src="../assets/logo/logo_waterscopeai.png"
+                                alt="WaterScope-AI logo"
+                            >
+                            <p class="documentation-website-name">
+                                WaterScope-AI
+                            </p>
+                        </a>
+
+                        <a class="documentation-resource-card documentation-website-card" href="https://starfriend10.github.io/WNP-ARAG/" target="_blank" rel="noopener noreferrer" aria-label="WNR-ARAG website">
+                            <img
+                                class="documentation-website-logo"
+                                src="../assets/logo/logo_wnp-arag.png"
+                                alt="WNR-ARAG logo"
+                            >
+                            <p class="documentation-website-name">
+                                WNR-ARAG
+                            </p>
+                        </a>
+
+                        <article class="documentation-resource-card documentation-website-card" aria-label="Future interactive website">
+                            <div
+                                class="documentation-website-logo"
+                                aria-hidden="true"
+                                style="display:flex;align-items:center;justify-content:center;border:1px dashed rgba(86,99,111,0.35);font-size:2rem;color:var(--text-secondary,#56636f);"
+                            >
+                                +
+                            </div>
+                            <p class="documentation-website-name">
+                                Future Website
+                            </p>
+                        </article>
+
+                    </div>
+
+                </div>
+
 
             </div>
         </section>
