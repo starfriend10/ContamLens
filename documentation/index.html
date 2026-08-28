@@ -584,6 +584,76 @@
         }
     </style>
 
+
+    <style>
+        /* Standalone GitHub support card */
+        .documentation-resources .documentation-support-card {
+            margin-top: 14px;
+            width: 100%;
+        }
+
+        .documentation-resources .documentation-support-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            margin-bottom: 14px;
+        }
+
+        .documentation-resources .documentation-support-header h3 {
+            margin: 0;
+            font-size: 1.12rem;
+            line-height: 1.25;
+        }
+
+        .documentation-resources .documentation-support-action {
+            flex: 0 0 auto;
+        }
+
+        .documentation-resources .documentation-support-action a {
+            white-space: nowrap;
+        }
+
+        .documentation-resources .documentation-support-message {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            padding: 14px 16px;
+            border-radius: 10px;
+            background: rgba(41, 128, 185, 0.055);
+            color: var(--text-secondary, #56636f);
+            font-size: 0.79rem;
+            line-height: 1.55;
+        }
+
+        .documentation-resources .documentation-support-icon {
+            flex: 0 0 auto;
+            width: 26px;
+            height: 26px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(41, 128, 185, 0.10);
+            color: var(--text-primary, #123f3b);
+            font-size: 0.86rem;
+            font-weight: 700;
+        }
+
+        @media (max-width: 700px) {
+            .documentation-resources .documentation-support-header {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .documentation-resources .documentation-support-message {
+                align-items: flex-start;
+            }
+        }
+    </style>
+
 </head>
 
 <body class="analysis-page documentation-page">
@@ -1824,6 +1894,33 @@
                     </article>
 
                 </div>
+
+                <article class="documentation-resource-card documentation-support-card">
+                    <div class="documentation-support-header">
+                        <h3>
+                            Support ContamLens Project 💙
+                        </h3>
+
+                        <div class="documentation-links documentation-support-action">
+                            <a
+                                href="https://github.com/starfriend10/ContamLens"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                ★ Star on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="documentation-support-message">
+                        <span class="documentation-support-icon" aria-hidden="true">♥</span>
+                        <span>
+                            Your support is very important to us. If ContamLens is useful for your research,
+                            please consider giving the project a star on GitHub. You can also explore our other
+                            🔬 research projects and open resources there.
+                        </span>
+                    </p>
+                </article>
 
 
                 <div class="documentation-publications-section">
