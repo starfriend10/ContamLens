@@ -2009,3 +2009,96 @@
 .classification-evolution-loading[hidden] {
     display: none;
 }
+
+
+/* =========================================================
+   Trending + Patterns: restore page-specific figure/legend sizing
+   Keeps these fixes isolated from Domains, Panels, Documentation, etc.
+========================================================= */
+
+/* Trending Bokeh figure: the embedded figure is taller than the
+   generic analysis-page iframe, so give this page its own height. */
+.trending-page .interactive-figure-frame {
+    min-height: 1400px;
+}
+
+.trending-page .interactive-figure-frame iframe {
+    height: 1400px;
+}
+
+/* Reading-guide alignment */
+.trending-page .trending-guide-inner,
+.patterns-page .patterns-guide-inner {
+    align-items: center;
+}
+
+.trend-factor-legend,
+.pattern-legend {
+    margin: 0;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+
+/* Prevent the standalone legend PNGs from rendering at their
+   large intrinsic dimensions. */
+.trend-factor-legend img {
+    display: block;
+    width: min(100%, 300px);
+    height: auto;
+    margin-left: auto;
+}
+
+.pattern-legend img {
+    display: block;
+    width: min(100%, 300px);
+    height: auto;
+    margin-left: auto;
+}
+
+@media (max-width: 1050px) {
+    .trending-page .interactive-figure-frame {
+        min-height: 900px;
+    }
+
+    .trending-page .interactive-figure-frame iframe {
+        height: 900px;
+    }
+}
+
+@media (max-width: 900px) {
+    .trending-page .interactive-figure-frame {
+        min-height: 780px;
+    }
+
+    .trending-page .interactive-figure-frame iframe {
+        height: 780px;
+    }
+}
+
+@media (max-width: 680px) {
+    .trend-factor-legend,
+    .pattern-legend {
+        justify-self: start;
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+
+    .trend-factor-legend img,
+    .pattern-legend img {
+        width: min(100%, 380px);
+        margin-left: 0;
+    }
+
+    .trending-page .interactive-figure-frame {
+        min-height: 620px;
+    }
+
+    .trending-page .interactive-figure-frame iframe {
+        height: 620px;
+    }
+}
