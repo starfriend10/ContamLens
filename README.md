@@ -84,6 +84,9 @@ Unlike traditional bibliometric tools, **ContamLens** was designed specifically 
 | 🔄 **Classification Evolution** | Visualize how environmental research composition changes over time. |
 | 📚 **Documentation** | Learn the analytical framework, temporal comparisons, and frequency metrics behind the platform. |
 
+### 🎥 Quick Platform Guide
+
+[![Watch on YouTube](https://img.youtube.com/vi/5_c0isrzuXc/hqdefault.jpg)](https://www.youtube.com/watch?v=5_c0isrzuXc)
 ---
 
 # ✨ Platform Highlights
