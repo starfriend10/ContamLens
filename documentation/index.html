@@ -654,6 +654,34 @@
         }
     </style>
 
+
+    <style>
+        /* Platform Guide walkthrough video */
+        .documentation-guide-video { margin-bottom: 24px; padding: 18px; border: 1px solid var(--line, #d9e1df); border-radius: 14px; background: var(--white, #fff); }
+        .documentation-guide-video-header { margin-bottom: 14px; }
+        .documentation-guide-video-header .documentation-card-label { margin: 0 0 5px; }
+        .documentation-guide-video-header h3 { margin: 0 0 5px; font-size: 1.05rem; line-height: 1.3; }
+        .documentation-guide-video-header p:last-child { margin: 0; color: var(--text-secondary, #56636f); font-size: .82rem; line-height: 1.5; }
+        .documentation-video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; background: #000; }
+        .documentation-video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+        @media (max-width: 700px) { .documentation-guide-video { padding: 14px; } }
+    </style>
+
+
+    <style>
+        .documentation-video-fallback {
+            margin: 10px 0 0;
+            color: var(--text-secondary, #56636f);
+            font-size: 0.76rem;
+            line-height: 1.45;
+            text-align: right;
+        }
+
+        .documentation-video-fallback a {
+            font-weight: 600;
+        }
+    </style>
+
 </head>
 
 <body class="analysis-page documentation-page">
@@ -1678,6 +1706,31 @@
                     </article>
 
                 </div>
+
+
+
+                <article class="documentation-guide-video">
+                    <div class="documentation-guide-video-header">
+                        <p class="documentation-card-label">Video walkthrough</p>
+                        <h3>Quick Platform Guide</h3>
+                        <p>Watch this short walkthrough for a quick introduction to navigating and interacting with the ContamLens platform.</p>
+                    </div>
+                    <div class="documentation-video-frame">
+                        <iframe
+                            src="https://www.youtube-nocookie.com/embed/5_c0isrzuXc?rel=0"
+                            title="ContamLens platform guide video"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+
+                    <p class="documentation-video-fallback">
+                        If the embedded player is unavailable,
+                        <a href="https://www.youtube.com/watch?v=5_c0isrzuXc" target="_blank" rel="noopener noreferrer">watch the video on YouTube</a>.
+                    </p>
+                </article>
+
 
             </div>
         </section>
