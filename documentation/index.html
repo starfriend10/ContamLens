@@ -682,6 +682,109 @@
         }
     </style>
 
+
+    <style>
+        /* Author profiles: large portrait + identity block */
+        .documentation-resources .documentation-author-card {
+            min-height: 285px;
+            padding: 24px;
+        }
+
+        .documentation-resources .documentation-author-top {
+            display: grid;
+            grid-template-columns: 132px minmax(0, 1fr);
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .documentation-resources .documentation-author-photo {
+            width: 132px;
+            height: 132px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 1px solid rgba(18, 63, 59, 0.10);
+            background: rgba(41, 128, 185, 0.035);
+        }
+
+        .documentation-resources .documentation-author-photo img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .documentation-resources .documentation-author-identity {
+            min-width: 0;
+        }
+
+        .documentation-resources .documentation-author-identity h3 {
+            margin: 0 0 6px;
+        }
+
+        .documentation-resources .documentation-author-role {
+            margin: 0 0 12px;
+        }
+
+        .documentation-resources .documentation-author-contact {
+            margin: 0;
+            font-size: 0.76rem;
+            line-height: 1.5;
+            color: var(--text-secondary, #56636f);
+        }
+
+        .documentation-resources .documentation-author-contact + .documentation-author-contact {
+            margin-top: 3px;
+        }
+
+        .documentation-resources .documentation-author-contact a {
+            font-weight: 600;
+        }
+
+        .documentation-resources .documentation-author-email {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .documentation-resources .documentation-author-affiliation {
+            margin: 0;
+            padding-top: 15px;
+            border-top: 1px solid rgba(18, 63, 59, 0.10);
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        .documentation-resources .documentation-author-affiliation span {
+            display: block;
+        }
+
+        @media (max-width: 1250px) {
+            .documentation-resources .documentation-author-top {
+                grid-template-columns: 112px minmax(0, 1fr);
+                gap: 16px;
+            }
+
+            .documentation-resources .documentation-author-photo {
+                width: 112px;
+                height: 112px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .documentation-resources .documentation-author-top {
+                grid-template-columns: 104px minmax(0, 1fr);
+            }
+
+            .documentation-resources .documentation-author-photo {
+                width: 104px;
+                height: 104px;
+            }
+        }
+    </style>
+
 </head>
 
 <body class="analysis-page documentation-page">
@@ -1766,154 +1869,103 @@
                 <div class="documentation-author-grid">
 
                     <article class="documentation-author-card">
-                        <div class="documentation-author-photo" aria-hidden="true">
-                            A1
+                        <div class="documentation-author-top">
+                            <div class="documentation-author-photo">
+                                <img src="../assets/headshot/Junjie.jpg" alt="Jun-Jie Zhu">
+                            </div>
+
+                            <div class="documentation-author-identity">
+                                <h3>Jun-Jie Zhu</h3>
+                                <p class="documentation-author-role">First Author · Platform Developer</p>
+                                <p class="documentation-author-contact">
+                                <a href="https://scholar.google.com/citations?user=n9Zatu8AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                            </p>
+                                <p class="documentation-author-contact documentation-author-email">
+                                    junjiez@princeton.edu
+                                </p>
+                            </div>
                         </div>
-
-                        <h3>
-                            Author Name
-                        </h3>
-
-                        <p class="documentation-author-role">
-                            Lead author · Platform development
-                        </p>
 
                         <p class="documentation-author-affiliation">
-                            Department and institution.
+                            <span>Associate Research Scholar</span>
+                            <span>CEE Department and ACEE</span>
+                            <span>Princeton University</span>
                         </p>
-
-                        <p class="documentation-author-interests">
-                            Research interests: environmental data science,
-                            contaminants, and machine learning.
-                        </p>
-
-                        <div class="documentation-links">
-                            <a href="#">
-                                Profile
-                            </a>
-
-                            <a href="#">
-                                ORCID
-                            </a>
-
-                            <a href="#">
-                                Email
-                            </a>
-                        </div>
                     </article>
 
-
                     <article class="documentation-author-card">
-                        <div class="documentation-author-photo" aria-hidden="true">
-                            A2
+                        <div class="documentation-author-top">
+                            <div class="documentation-author-photo">
+                                <img src="../assets/headshot/Zi.jpg" alt="Zi Zhang">
+                            </div>
+
+                            <div class="documentation-author-identity">
+                                <h3>Zi Zhang</h3>
+                                <p class="documentation-author-role">Co-Author</p>
+                                <p class="documentation-author-contact">
+                                <a href="https://scholar.google.com/citations?user=Ydxb-uoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                            </p>
+                                <p class="documentation-author-contact documentation-author-email">
+                                    zhangzi@princeton.edu
+                                </p>
+                            </div>
                         </div>
-
-                        <h3>
-                            Author Name
-                        </h3>
-
-                        <p class="documentation-author-role">
-                            Co-author
-                        </p>
 
                         <p class="documentation-author-affiliation">
-                            Department and institution.
+                            <span>Postdoctoral Research Associate</span>
+                            <span>CEE Department and ACEE</span>
+                            <span>Princeton University</span>
                         </p>
-
-                        <p class="documentation-author-interests">
-                            Research interests: contaminant chemistry,
-                            environmental processes, and risk assessment.
-                        </p>
-
-                        <div class="documentation-links">
-                            <a href="#">
-                                Profile
-                            </a>
-
-                            <a href="#">
-                                ORCID
-                            </a>
-
-                            <a href="#">
-                                Email
-                            </a>
-                        </div>
                     </article>
 
-
                     <article class="documentation-author-card">
-                        <div class="documentation-author-photo" aria-hidden="true">
-                            A3
+                        <div class="documentation-author-top">
+                            <div class="documentation-author-photo">
+                                <img src="../assets/headshot/Dan.jpg" alt="Daniel Schlenk">
+                            </div>
+
+                            <div class="documentation-author-identity">
+                                <h3>Daniel Schlenk</h3>
+                                <p class="documentation-author-role">Co-Author</p>
+                                <p class="documentation-author-contact">
+                                <a href="https://scholar.google.com/citations?user=vA-HsPIAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                            </p>
+                                <p class="documentation-author-contact documentation-author-email">
+                                    daniel.schlenk@ucr.edu
+                                </p>
+                            </div>
                         </div>
-
-                        <h3>
-                            Author Name
-                        </h3>
-
-                        <p class="documentation-author-role">
-                            Co-author
-                        </p>
 
                         <p class="documentation-author-affiliation">
-                            Department and institution.
+                            <span>Distinguished Professor</span>
+                            <span>Department of Environmental Sciences</span>
+                            <span>University of California, Riverside</span>
                         </p>
-
-                        <p class="documentation-author-interests">
-                            Research interests: bibliometrics, natural language
-                            processing, and environmental classification.
-                        </p>
-
-                        <div class="documentation-links">
-                            <a href="#">
-                                Profile
-                            </a>
-
-                            <a href="#">
-                                ORCID
-                            </a>
-
-                            <a href="#">
-                                Email
-                            </a>
-                        </div>
                     </article>
 
-
                     <article class="documentation-author-card">
-                        <div class="documentation-author-photo" aria-hidden="true">
-                            A4
+                        <div class="documentation-author-top">
+                            <div class="documentation-author-photo">
+                                <img src="../assets/headshot/Jason.jpg" alt="Zhiyong Jason Ren">
+                            </div>
+
+                            <div class="documentation-author-identity">
+                                <h3>Zhiyong Jason Ren</h3>
+                                <p class="documentation-author-role">Corresponding Author</p>
+                                <p class="documentation-author-contact">
+                                <a href="https://scholar.google.com/citations?user=6JZGDtoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                            </p>
+                                <p class="documentation-author-contact documentation-author-email">
+                                    zjren@princeton.edu
+                                </p>
+                            </div>
                         </div>
-
-                        <h3>
-                            Author Name
-                        </h3>
-
-                        <p class="documentation-author-role">
-                            Corresponding author
-                        </p>
 
                         <p class="documentation-author-affiliation">
-                            Department and institution.
+                            <span>Eugene Higgins Professor</span>
+                            <span>CEE Department and ACEE</span>
+                            <span>Princeton University</span>
                         </p>
-
-                        <p class="documentation-author-interests">
-                            Research interests: environmental engineering,
-                            research trends, and science communication.
-                        </p>
-
-                        <div class="documentation-links">
-                            <a href="#">
-                                Profile
-                            </a>
-
-                            <a href="#">
-                                ORCID
-                            </a>
-
-                            <a href="#">
-                                Email
-                            </a>
-                        </div>
                     </article>
 
                 </div>
