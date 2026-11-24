@@ -52,7 +52,7 @@
 
 | Study Period | Publications | Topics | Domains | Panels |
 |:-------------:|:------------:|:------:|:-------:|:------:|
-| **1967–2026** | **34,000+** | **566** | **18** | **4** |
+| **1967–2026** | **36,000+** | **576** | **18** | **4** |
 
 </div>
 
@@ -91,8 +91,8 @@ Unlike traditional bibliometric tools, **ContamLens** was designed specifically 
 
 # ✨ Platform Highlights
 
-- 🌍 **34,000+** environmental publications
-- 🏷️ **566** contaminant and stressor topics
+- 🌍 **36,000+** environmental publications
+- 🏷️ **576** contaminant and stressor topics
 - 🧪 **18** expert-informed environmental domains
 - 📊 Four integrated thematic panels
 - 📈 Consecutive 15-year temporal comparisons
@@ -106,16 +106,16 @@ Unlike traditional bibliometric tools, **ContamLens** was designed specifically 
 # 🔬 Analytical Framework
 
 ```text
-    47,000+ ES&T Publications
+    50,000+ ES&T Publications
                  │
                  ▼
-34,000+ Contaminant Relevant Publications
+36,000 Contaminant Relevant Publications
                  │
                  ▼
      Topic Identification & Screening
                  │
                  ▼
- 566 Contaminant & Stressor Topics
+ 576 Contaminant & Stressor Topics
                  │
                  ▼
 18 Expert-informed Environmental Domains
